@@ -14,7 +14,7 @@ O objetivo deste desafio é avaliar as competências técnicas dos candidatos a 
 - Projeto em .Net8.0
   - Reqnroll
   - Selenium
-  - XUnit
+  - XUnit ou Nunit
 
 1.2. Explore os fluxos presentes na aplicação Subscriptions e identifique regras e requisitos.
    - Acesse a aplicação [aqui](https://developer.grupoa.education/subscription).
