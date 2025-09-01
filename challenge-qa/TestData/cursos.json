@@ -1,0 +1,34 @@
+﻿{
+  "Graduacao": [
+    "Administração",
+    "Análise e Desenvolvimento de Sistemas",
+    "Ciência de Dados",
+    "Direito",
+    "Ciência da Computação",
+    "Engenharia de Software",
+    "Engenharia Elétrica",
+    "Engenharia Mecânica",
+    "Engenharia Civil",
+    "Engenharia de Produção",
+    "Engenharia Química",
+    "Gestão de Tecnologia da Informação",
+    "Nutrição",
+    "Psicologia",
+    "Redes de Computadores",
+    "Sistemas de Informação",
+    "Tecnologia da Informação",
+    "Segurança da Informação"
+  ],
+  "PosGraduacao": [
+    "Mestrado em Ciência da Computação",
+    "Mestrado em Engenharia de Software",
+    "Mestrado em Inteligência Artificial",
+    "Especialização em Segurança da Informação",
+    "Doutorado em Ciência da Computação",
+    "Doutorado em Engenharia de Software",
+    "Doutorado em Inteligência Artificial",
+    "Especialização em Ciência de Dados",
+    "Especialização em Blockchain",
+    "Especialização em Computação em Nuvem"
+  ]
+}

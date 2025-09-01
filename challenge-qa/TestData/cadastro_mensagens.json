@@ -1,0 +1,31 @@
+﻿{
+  "mensagens_erro": {
+    "cpf_curto": "CPF inválido",
+    "cpf_longo": "CPF inválido",
+    "cpf_letras": "CPF inválido",
+    "cpf_vazio": "Campo obrigatório",
+    "nome_vazio": "Campo obrigatório",
+    "sobrenome_vazio": "Campo obrigatório",
+    "email_falta_arroba": "Email inválido",
+    "email_falta_tld": "Email inválido",
+    "email_dois_pontos": "Email inválido",
+    "email_comeca_ponto": "Email inválido",
+    "email_tld_curto": "Email inválido",
+    "celular_curto": "Devem ser informados no mínimo 10 caracteres",
+    "celular_longo": "Devem ser informados no máximo 15 caracteres",
+    "celular_letras": "Celular deve conter apenas números",
+    "celular_vazio": "Campo obrigatório",
+    "telefone_curto": "Devem ser informados no mínimo 10 caracteres",
+    "telefone_longo": "Devem ser informados no máximo 15 caracteres",
+    "telefone_letras": "Celular deve conter apenas números",
+    "cep_curto": "Devem ser informados no mínimo 8 caracteres",
+    "cep_longo": "Devem ser informados no máximo 8 caracteres",
+    "cep_letras": "CEP deve conter apenas números",
+    "cep_caracteres": "CEP deve conter apenas números",
+    "cep_vazio": "Campo obrigatório",
+    "cidade_vazio": "Campo obrigatório",
+    "estado_vazio": "Campo obrigatório",
+    "pais_vazio": "Campo obrigatório",
+    "data_futuro": "Data de nascimento inválida"
+  }
+}
