@@ -112,7 +112,7 @@ namespace ChallengeQa.Features
   Para conseguir prosseguir no fluxo de inscrição
 
 
-@Login @Responsividade
+@Login @Responsividade @GT-017
 Scenario Outline: Fluxo de login completo em <resolucao>
   Given que acesso a página inicial com cadastro concluído no curso ""<curso>"" do nível ""<nivel>""
   When defino a janela para ""<resolucao>""
@@ -135,98 +135,102 @@ Examples:
             return new global::Io.Cucumber.Messages.Types.GherkinDocument("Features/Responsiveness.feature", new global::Io.Cucumber.Messages.Types.Feature(new global::Io.Cucumber.Messages.Types.Location(1, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "en-US", "Feature", "Testes de Responsividade", "  Como usuário em diferentes dispositivos\r\n  Quero visualizar corretamente o botã" +
                         "o \"Avançar\"\r\n  Para conseguir prosseguir no fluxo de inscrição", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.FeatureChild>(new global::Io.Cucumber.Messages.Types.FeatureChild[] {
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(8, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(1)), "@Login", "38c056d38fcc4050970283c59a19ae3d"),
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(8)), "@Responsividade", "50443eb82577045db52f85c35b0fd63f")}), "Scenario Outline", "Fluxo de login completo em <resolucao>", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(1)), "@Login", "6702ba2425d75a5697e2867a1257cb0a"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(8)), "@Responsividade", "802f0ad3e35c8f5d99864fcbfb6e8594"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(24)), "@GT-017", "9ffea58856e85a52ab22b2b2ccceab82")}), "Scenario Outline", "Fluxo de login completo em <resolucao>", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
                                                     new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página inicial com cadastro concluído no curso \"<curso>\" do nível \"<" +
-                                                            "nivel>\"", null, null, "5fc6ff7928532d58878bdafe478dc465"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(10, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "defino a janela para \"<resolucao>\"", null, null, "0fd7ca5a3537245b859415fda0162549"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(11, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário e senha válidos", null, null, "47bd32a1ff2f235aabbbd805383afd7d"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Login\"", null, null, "c071d6451c6fb259b2585ba184fb7f24"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a página inicial da área do candidato", null, null, "437a77a36d58465a8610689515b694b8")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
+                                                            "nivel>\"", null, null, "7b93b3460344835580b3e86bac259865"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(10, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "defino a janela para \"<resolucao>\"", null, null, "5c036f1f83788f57924ee7578934e033"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(11, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário e senha válidos", null, null, "74f725f5487d885aa59bb48ed15aa622"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Login\"", null, null, "f5ee1e8687c3cb508c5828bbad11e86b"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a página inicial da área do candidato", null, null, "12e487904bded45891a95095884d1980")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
                                                     new global::Io.Cucumber.Messages.Types.Examples(new global::Io.Cucumber.Messages.Types.Location(15, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "Examples", "", "", new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(5)), "curso"),
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(39)), "nivel"),
-                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(56)), "resolucao")}), "aff62c321eefd75eb6dbf7962032f722"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
+                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(56)), "resolucao")}), "e6ef99009c793455abdd50486952d5d6"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(5)), "Mestrado em Engenharia de Software"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(42)), "Pós-graduação"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(58)), "1366x768")}), "548b9f945f372d54b673ce1094e39759"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(58)), "1366x768")}), "ca278fac72d58e51aaee0cda4cabb246"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(5)), "Direito"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(39)), "Graduação"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(56)), "1920x1080")}), "5d83b98a5787e352b92a61e0001737d0"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(56)), "1920x1080")}), "3755f1a86637355a9713b5acc5df0fc5"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(5)), "Psicologia"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(39)), "Graduação"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(56)), "375x812")}), "b265ce92066aec5db55297bc76abe21c")}), "6bea57d0370b9d5683d9a7cee583d048")}), "7468bfcc853dea57ac82c50d9228596f"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[0]));
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(56)), "375x812")}), "bd1e3899cc1b08588d8fa7825a5f0412")}), "cf5ede2d7a54de578caefd5e39ac59c5")}), "f869972c2f59335fa33d9cd1c80a670e"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[0]));
         }
         
         private static global::System.Collections.Generic.IEnumerable<Io.Cucumber.Messages.Types.Pickle> PicklesFunc()
         {
             return new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Pickle>(new global::Io.Cucumber.Messages.Types.Pickle[] {
-                        new global::Io.Cucumber.Messages.Types.Pickle("fbf8f4938fe117599971e9e603a218f6", "Features/Responsiveness.feature", "Fluxo de login completo em 1366x768", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                        new global::Io.Cucumber.Messages.Types.Pickle("8e335d2bb8edc45cb2792ee15b44eb2f", "Features/Responsiveness.feature", "Fluxo de login completo em 1366x768", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "5fc6ff7928532d58878bdafe478dc465",
-                                                        "548b9f945f372d54b673ce1094e39759"}), "9b4dda18cf9c1151a399b3adaaee5581", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página inicial com cadastro concluído no curso \"Mestrado em Engenhar" +
+                                                        "7b93b3460344835580b3e86bac259865",
+                                                        "ca278fac72d58e51aaee0cda4cabb246"}), "8f28b3574ab7cf5d854716bee14e25b9", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página inicial com cadastro concluído no curso \"Mestrado em Engenhar" +
                                                 "ia de Software\" do nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0fd7ca5a3537245b859415fda0162549",
-                                                        "548b9f945f372d54b673ce1094e39759"}), "c2ec9847d699fe54abd834380d3d0fbc", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "defino a janela para \"1366x768\""),
+                                                        "5c036f1f83788f57924ee7578934e033",
+                                                        "ca278fac72d58e51aaee0cda4cabb246"}), "8461f3d15025eb56b468fec28eefc6ae", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "defino a janela para \"1366x768\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "47bd32a1ff2f235aabbbd805383afd7d",
-                                                        "548b9f945f372d54b673ce1094e39759"}), "a249bf6024ebd659b36b1e665664e68a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
+                                                        "74f725f5487d885aa59bb48ed15aa622",
+                                                        "ca278fac72d58e51aaee0cda4cabb246"}), "44247897bb9f135ab31fb86843a25a9b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "c071d6451c6fb259b2585ba184fb7f24",
-                                                        "548b9f945f372d54b673ce1094e39759"}), "0b2b12529313635393b1fe1af878647f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "f5ee1e8687c3cb508c5828bbad11e86b",
+                                                        "ca278fac72d58e51aaee0cda4cabb246"}), "fa73ad47ce174750bda6630d19a74f01", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "437a77a36d58465a8610689515b694b8",
-                                                        "548b9f945f372d54b673ce1094e39759"}), "518b4fb871fa06508133b49e3211f9f5", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "38c056d38fcc4050970283c59a19ae3d"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Responsividade", "50443eb82577045db52f85c35b0fd63f")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "7468bfcc853dea57ac82c50d9228596f",
-                                        "548b9f945f372d54b673ce1094e39759"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("63dcd2bf93bcf25d81f2fabe57ec6b65", "Features/Responsiveness.feature", "Fluxo de login completo em 1920x1080", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "12e487904bded45891a95095884d1980",
+                                                        "ca278fac72d58e51aaee0cda4cabb246"}), "d2cd9d4d3b5eba588cf4f5336b8a43b5", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "6702ba2425d75a5697e2867a1257cb0a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Responsividade", "802f0ad3e35c8f5d99864fcbfb6e8594"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-017", "9ffea58856e85a52ab22b2b2ccceab82")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "f869972c2f59335fa33d9cd1c80a670e",
+                                        "ca278fac72d58e51aaee0cda4cabb246"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("fb0c01142334495b82bde3e19b46fce9", "Features/Responsiveness.feature", "Fluxo de login completo em 1920x1080", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "5fc6ff7928532d58878bdafe478dc465",
-                                                        "5d83b98a5787e352b92a61e0001737d0"}), "86f3cd34c66e47529104f9a03e95c0e6", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página inicial com cadastro concluído no curso \"Direito\" do nível \"G" +
+                                                        "7b93b3460344835580b3e86bac259865",
+                                                        "3755f1a86637355a9713b5acc5df0fc5"}), "15e5d0a4b8b319598da8be324280b6ed", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página inicial com cadastro concluído no curso \"Direito\" do nível \"G" +
                                                 "raduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0fd7ca5a3537245b859415fda0162549",
-                                                        "5d83b98a5787e352b92a61e0001737d0"}), "efd191d71f269453b50b29225696a794", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "defino a janela para \"1920x1080\""),
+                                                        "5c036f1f83788f57924ee7578934e033",
+                                                        "3755f1a86637355a9713b5acc5df0fc5"}), "fcd2de4a8b656c5a9cdc0a6f881b1f76", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "defino a janela para \"1920x1080\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "47bd32a1ff2f235aabbbd805383afd7d",
-                                                        "5d83b98a5787e352b92a61e0001737d0"}), "b5c1c5a78efdee5e961cec1198993361", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
+                                                        "74f725f5487d885aa59bb48ed15aa622",
+                                                        "3755f1a86637355a9713b5acc5df0fc5"}), "87a257a75c758b5d945199a88a3160ff", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "c071d6451c6fb259b2585ba184fb7f24",
-                                                        "5d83b98a5787e352b92a61e0001737d0"}), "d1fca8436e00ae57847182e81fa4b3e0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "f5ee1e8687c3cb508c5828bbad11e86b",
+                                                        "3755f1a86637355a9713b5acc5df0fc5"}), "80ea5eebdf7afe5bbfa728f9c25580a3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "437a77a36d58465a8610689515b694b8",
-                                                        "5d83b98a5787e352b92a61e0001737d0"}), "1c4bd4ea6a428d5c9c89eeb30809bbd7", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "38c056d38fcc4050970283c59a19ae3d"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Responsividade", "50443eb82577045db52f85c35b0fd63f")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "7468bfcc853dea57ac82c50d9228596f",
-                                        "5d83b98a5787e352b92a61e0001737d0"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("47cf584e0972965e80b3ae30600f0f93", "Features/Responsiveness.feature", "Fluxo de login completo em 375x812", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "12e487904bded45891a95095884d1980",
+                                                        "3755f1a86637355a9713b5acc5df0fc5"}), "7fc4682c687dc9569640e9659a86743a", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "6702ba2425d75a5697e2867a1257cb0a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Responsividade", "802f0ad3e35c8f5d99864fcbfb6e8594"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-017", "9ffea58856e85a52ab22b2b2ccceab82")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "f869972c2f59335fa33d9cd1c80a670e",
+                                        "3755f1a86637355a9713b5acc5df0fc5"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("ff40334014618050828ea10d7d79fb3e", "Features/Responsiveness.feature", "Fluxo de login completo em 375x812", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "5fc6ff7928532d58878bdafe478dc465",
-                                                        "b265ce92066aec5db55297bc76abe21c"}), "bcad1c562335855ebe6b39341315a52f", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página inicial com cadastro concluído no curso \"Psicologia\" do nível" +
+                                                        "7b93b3460344835580b3e86bac259865",
+                                                        "bd1e3899cc1b08588d8fa7825a5f0412"}), "a7be28e666e85b5b928ee3aed155171d", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página inicial com cadastro concluído no curso \"Psicologia\" do nível" +
                                                 " \"Graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0fd7ca5a3537245b859415fda0162549",
-                                                        "b265ce92066aec5db55297bc76abe21c"}), "cad56521c61cc359b4173620b4ed0f6b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "defino a janela para \"375x812\""),
+                                                        "5c036f1f83788f57924ee7578934e033",
+                                                        "bd1e3899cc1b08588d8fa7825a5f0412"}), "5831f16378a96b5a82a211b364a10b28", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "defino a janela para \"375x812\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "47bd32a1ff2f235aabbbd805383afd7d",
-                                                        "b265ce92066aec5db55297bc76abe21c"}), "27bccb0bb510de5a8a2764dd16edbc83", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
+                                                        "74f725f5487d885aa59bb48ed15aa622",
+                                                        "bd1e3899cc1b08588d8fa7825a5f0412"}), "acf4983374f8e653bbf6592b954a36c8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "c071d6451c6fb259b2585ba184fb7f24",
-                                                        "b265ce92066aec5db55297bc76abe21c"}), "07530b9e737b1c5bba73575270e79c44", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "f5ee1e8687c3cb508c5828bbad11e86b",
+                                                        "bd1e3899cc1b08588d8fa7825a5f0412"}), "ddf18bffa2432756b02c31e268ab3901", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "437a77a36d58465a8610689515b694b8",
-                                                        "b265ce92066aec5db55297bc76abe21c"}), "c7faef7a95557c579e2a8e523d22bab6", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "38c056d38fcc4050970283c59a19ae3d"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Responsividade", "50443eb82577045db52f85c35b0fd63f")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "7468bfcc853dea57ac82c50d9228596f",
-                                        "b265ce92066aec5db55297bc76abe21c"}))});
+                                                        "12e487904bded45891a95095884d1980",
+                                                        "bd1e3899cc1b08588d8fa7825a5f0412"}), "cca868eb5dcdb85b9e19baf509557a5b", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "6702ba2425d75a5697e2867a1257cb0a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Responsividade", "802f0ad3e35c8f5d99864fcbfb6e8594"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-017", "9ffea58856e85a52ab22b2b2ccceab82")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "f869972c2f59335fa33d9cd1c80a670e",
+                                        "bd1e3899cc1b08588d8fa7825a5f0412"}))});
         }
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
@@ -238,6 +242,7 @@ Examples:
         [global::NUnit.Framework.DescriptionAttribute("Fluxo de login completo em <resolucao>")]
         [global::NUnit.Framework.CategoryAttribute("Login")]
         [global::NUnit.Framework.CategoryAttribute("Responsividade")]
+        [global::NUnit.Framework.CategoryAttribute("GT-017")]
         [global::NUnit.Framework.TestCaseAttribute("Mestrado em Engenharia de Software", "Pós-graduação", "1366x768", "0", null)]
         [global::NUnit.Framework.TestCaseAttribute("Direito", "Graduação", "1920x1080", "1", null)]
         [global::NUnit.Framework.TestCaseAttribute("Psicologia", "Graduação", "375x812", "2", null)]
@@ -245,7 +250,8 @@ Examples:
         {
             string[] @__tags = new string[] {
                     "Login",
-                    "Responsividade"};
+                    "Responsividade",
+                    "GT-017"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

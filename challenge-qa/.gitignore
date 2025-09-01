@@ -1,37 +1,25 @@
-﻿# Build
+﻿# Arquivos do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Cache / build
 bin/
 obj/
-TestResults/
-*.exe
-*.dll
-*.pdb
-
-# Usuário / IDE
-.vs/
-*.user
-*.suo
+*.db
 *.cache
+*.v2
+*.idx
 *.log
+*.testlog
+*.manifest
+
+# Relatórios / Evidências
+Evidence/
+*.html
+results/
 
 # Configurações locais
-launchSettings.json
-
-# Pacotes NuGet (serão restaurados pelo restore)
-packages/
-
-# Arquivos temporários
-*.tmp
-*.temp
-
-# Backup do VS
-*.csproj.user
-*.csproj.Backup*
-
-# node.js / k6
-node_modules/
-results/
-*.html
-
-# Outros
-.DS_Store
-Thumbs.db
+*.local.json

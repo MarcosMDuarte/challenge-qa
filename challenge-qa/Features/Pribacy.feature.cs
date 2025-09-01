@@ -111,19 +111,19 @@ namespace ChallengeQa.Features
   Quero acessar a página de Política de Privacidade
   Para entender como meus dados são tratados
 
-  @PrivacyPolicy
+  @PrivacyPolicy @GT-014
   Scenario: Validar a página de Política de Privacidade no Chrome
     Given que acesso a página ""https://developer.grupoa.education/subscription/"" no chrome
     When clico no link ""Política de Privacidade""
     Then devo visualizar o título ""Política de Privacidade""
 
-  @PrivacyPolicy
+  @PrivacyPolicy @GT-015
   Scenario: Validar a página de Política de Privacidade no Firefox
     Given que acesso a página ""https://developer.grupoa.education/subscription/"" no firefox
     When clico no link ""Política de Privacidade""
     Then devo visualizar o título ""Política de Privacidade""
 
-  @PrivacyPolicy
+  @PrivacyPolicy @GT-016
   Scenario: Validar a página de Política de Privacidade no Edge
     Given que acesso a página ""https://developer.grupoa.education/subscription/"" no edge
     When clico no link ""Política de Privacidade""
@@ -136,54 +136,60 @@ namespace ChallengeQa.Features
             return new global::Io.Cucumber.Messages.Types.GherkinDocument("Features/Pribacy.feature", new global::Io.Cucumber.Messages.Types.Feature(new global::Io.Cucumber.Messages.Types.Location(1, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "en-US", "Feature", "Política de Privacidade", "  Como usuário\r\n  Quero acessar a página de Política de Privacidade\r\n  Para enten" +
                         "der como meus dados são tratados", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.FeatureChild>(new global::Io.Cucumber.Messages.Types.FeatureChild[] {
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(3)), "@PrivacyPolicy", "2f60576f0b1bde539840215882b36feb")}), "Scenario", "Validar a página de Política de Privacidade no Chrome", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(8, new System.Nullable<long>(5)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no chrome", null, null, "119b1835fd0e0f519c5d08afd74574e2"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(5)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no link \"Política de Privacidade\"", null, null, "35846767126b375c9625667e24dbb7cc"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(10, new System.Nullable<long>(5)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"", null, null, "1cbaf39c2c8f305da5637b44f31e708c")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "d3b556dccbf74758b04b84be8ec8a86a")),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(3)), "@PrivacyPolicy", "85afc720ca61e25081c085aafe7b6d02"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(18)), "@GT-014", "8c0d1cbab2ae675889655e04720ce646")}), "Scenario", "Validar a página de Política de Privacidade no Chrome", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(8, new System.Nullable<long>(5)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no chrome", null, null, "4fcc7f9ea61e5b5a87c0a2e0c774932c"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(5)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no link \"Política de Privacidade\"", null, null, "ef3a6b24ef8a715ba6906abc0ffe9aa9"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(10, new System.Nullable<long>(5)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"", null, null, "47c36e85d72ea556ac5c48e7bf6bc7bb")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "1ebc73f20bfe065b87e108a31cef7f72")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(3)), "@PrivacyPolicy", "97e1a4fd563ae25da5b302c78398f3a7")}), "Scenario", "Validar a página de Política de Privacidade no Firefox", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(3)), "@PrivacyPolicy", "40463c7156d1bc5d96532f71c4139c6a"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(18)), "@GT-015", "72b492d413002d538068cb4ba7a5d965")}), "Scenario", "Validar a página de Política de Privacidade no Firefox", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
                                                     new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(14, new System.Nullable<long>(5)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no firefox" +
-                                                            "", null, null, "846427ccb0882a54b760ae00fc46cdb5"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(15, new System.Nullable<long>(5)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no link \"Política de Privacidade\"", null, null, "ea8f88627155fc5b94cc262795f6f69b"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(5)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"", null, null, "05da647fe5f0a759b4c0cecf826dc448")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "f93d48f5241c645d8d682ab2f9d2d738")),
+                                                            "", null, null, "d78d71c57e01c45d8bba31daf4559c49"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(15, new System.Nullable<long>(5)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no link \"Política de Privacidade\"", null, null, "b8f223e824b32e5e8e680d6cf7400a11"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(5)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"", null, null, "c1315b5bfca8295aab456501662dd9cf")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "45a1fc56c4b6aa52b285cb1fa0075051")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(3)), "@PrivacyPolicy", "8e724991a4e40b5aa76da74cf02bcddd")}), "Scenario", "Validar a página de Política de Privacidade no Edge", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(20, new System.Nullable<long>(5)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no edge", null, null, "f35b9966989c8e579e5be75e6fe15791"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(21, new System.Nullable<long>(5)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no link \"Política de Privacidade\"", null, null, "af2e9b3142744a5bb8ded60046c9f7b8"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(22, new System.Nullable<long>(5)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"", null, null, "8f8c4327f98c7855933d650680b041d4")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "26e337ec716bf556840bf00ba8fedf8f"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[0]));
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(3)), "@PrivacyPolicy", "6f9642fa72e6f35492013918ebd6ae1e"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(18)), "@GT-016", "dc79f739f9951450befa017472553198")}), "Scenario", "Validar a página de Política de Privacidade no Edge", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(20, new System.Nullable<long>(5)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no edge", null, null, "bb626257eb9b6250bedeca8a52800a5f"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(21, new System.Nullable<long>(5)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no link \"Política de Privacidade\"", null, null, "6f4c413fc92577528753fa4ad8c03c5e"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(22, new System.Nullable<long>(5)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"", null, null, "c2e8b43e1dcd6852988a5f70b43a2a17")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "dc18c9767f284f57ab043f97c5e43ec0"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[0]));
         }
         
         private static global::System.Collections.Generic.IEnumerable<Io.Cucumber.Messages.Types.Pickle> PicklesFunc()
         {
             return new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Pickle>(new global::Io.Cucumber.Messages.Types.Pickle[] {
-                        new global::Io.Cucumber.Messages.Types.Pickle("3175ba1b117cb756a5c4bf4f131fa412", "Features/Pribacy.feature", "Validar a página de Política de Privacidade no Chrome", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                        new global::Io.Cucumber.Messages.Types.Pickle("7621dd58830250598b9c2fec24dbe2fa", "Features/Pribacy.feature", "Validar a página de Política de Privacidade no Chrome", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "119b1835fd0e0f519c5d08afd74574e2"}), "afeda78c11f4595a8fcc189a6978d426", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no chrome"),
+                                                        "4fcc7f9ea61e5b5a87c0a2e0c774932c"}), "9ad7f83bb91c0d5c9c4778a3aba00615", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no chrome"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "35846767126b375c9625667e24dbb7cc"}), "8e8b601af83ea85c96fc22343cdcc21f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no link \"Política de Privacidade\""),
+                                                        "ef3a6b24ef8a715ba6906abc0ffe9aa9"}), "e54ce0f444e38b54a7be1b814781f210", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no link \"Política de Privacidade\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1cbaf39c2c8f305da5637b44f31e708c"}), "f2fd99838865ec5bac6f9e73618ea882", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@PrivacyPolicy", "2f60576f0b1bde539840215882b36feb")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "d3b556dccbf74758b04b84be8ec8a86a"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("0db5b5b96bdd0a59ab1914cf8e0b0807", "Features/Pribacy.feature", "Validar a página de Política de Privacidade no Firefox", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "47c36e85d72ea556ac5c48e7bf6bc7bb"}), "f27abaacc9d61b52a4c5a983f3bb864d", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@PrivacyPolicy", "85afc720ca61e25081c085aafe7b6d02"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-014", "8c0d1cbab2ae675889655e04720ce646")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "1ebc73f20bfe065b87e108a31cef7f72"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("3710819a75d4325488314362a6737dc9", "Features/Pribacy.feature", "Validar a página de Política de Privacidade no Firefox", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "846427ccb0882a54b760ae00fc46cdb5"}), "3a0d4b9227ec21549d1cc8560f5ea2c3", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no firefox" +
+                                                        "d78d71c57e01c45d8bba31daf4559c49"}), "8ec423087c881b568a50d048684a92bf", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no firefox" +
                                                 ""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ea8f88627155fc5b94cc262795f6f69b"}), "872db53ca2704d5facc626252b825492", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no link \"Política de Privacidade\""),
+                                                        "b8f223e824b32e5e8e680d6cf7400a11"}), "ebdab04469cb3b56b3f8aa992c0bd5e7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no link \"Política de Privacidade\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "05da647fe5f0a759b4c0cecf826dc448"}), "fe1c4b931ecd02518316d564d58ef1d3", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@PrivacyPolicy", "97e1a4fd563ae25da5b302c78398f3a7")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "f93d48f5241c645d8d682ab2f9d2d738"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("a7710b3d4441195da464ae77d2956149", "Features/Pribacy.feature", "Validar a página de Política de Privacidade no Edge", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "c1315b5bfca8295aab456501662dd9cf"}), "9a1121b4682b1e5d8d95f79394dfb43a", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@PrivacyPolicy", "40463c7156d1bc5d96532f71c4139c6a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-015", "72b492d413002d538068cb4ba7a5d965")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "45a1fc56c4b6aa52b285cb1fa0075051"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("ce1e9cb84f4e2e549d4392e4bcaf54e6", "Features/Pribacy.feature", "Validar a página de Política de Privacidade no Edge", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "f35b9966989c8e579e5be75e6fe15791"}), "12b2a16c05f5f65b90902762d2f488dc", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no edge"),
+                                                        "bb626257eb9b6250bedeca8a52800a5f"}), "99aa22ef84164d57a8a085ee3d675940", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página \"https://developer.grupoa.education/subscription/\" no edge"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "af2e9b3142744a5bb8ded60046c9f7b8"}), "e03f6f2ae6344d548390617f5a02dde4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no link \"Política de Privacidade\""),
+                                                        "6f4c413fc92577528753fa4ad8c03c5e"}), "575ebb6fba955d5d8d482fe00961fda9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no link \"Política de Privacidade\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8f8c4327f98c7855933d650680b041d4"}), "3b4f441e7739b55bafed6a470bdf0451", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@PrivacyPolicy", "8e724991a4e40b5aa76da74cf02bcddd")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "26e337ec716bf556840bf00ba8fedf8f"}))});
+                                                        "c2e8b43e1dcd6852988a5f70b43a2a17"}), "d0d9666f73278e54b60a967398692caf", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o título \"Política de Privacidade\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@PrivacyPolicy", "6f9642fa72e6f35492013918ebd6ae1e"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-016", "dc79f739f9951450befa017472553198")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "dc18c9767f284f57ab043f97c5e43ec0"}))});
         }
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
@@ -194,10 +200,12 @@ namespace ChallengeQa.Features
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Validar a página de Política de Privacidade no Chrome")]
         [global::NUnit.Framework.CategoryAttribute("PrivacyPolicy")]
+        [global::NUnit.Framework.CategoryAttribute("GT-014")]
         public async global::System.Threading.Tasks.Task ValidarAPaginaDePoliticaDePrivacidadeNoChrome()
         {
             string[] tagsOfScenario = new string[] {
-                    "PrivacyPolicy"};
+                    "PrivacyPolicy",
+                    "GT-014"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "0";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validar a página de Política de Privacidade no Chrome", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
@@ -229,10 +237,12 @@ namespace ChallengeQa.Features
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Validar a página de Política de Privacidade no Firefox")]
         [global::NUnit.Framework.CategoryAttribute("PrivacyPolicy")]
+        [global::NUnit.Framework.CategoryAttribute("GT-015")]
         public async global::System.Threading.Tasks.Task ValidarAPaginaDePoliticaDePrivacidadeNoFirefox()
         {
             string[] tagsOfScenario = new string[] {
-                    "PrivacyPolicy"};
+                    "PrivacyPolicy",
+                    "GT-015"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "1";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validar a página de Política de Privacidade no Firefox", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
@@ -265,10 +275,12 @@ namespace ChallengeQa.Features
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Validar a página de Política de Privacidade no Edge")]
         [global::NUnit.Framework.CategoryAttribute("PrivacyPolicy")]
+        [global::NUnit.Framework.CategoryAttribute("GT-016")]
         public async global::System.Threading.Tasks.Task ValidarAPaginaDePoliticaDePrivacidadeNoEdge()
         {
             string[] tagsOfScenario = new string[] {
-                    "PrivacyPolicy"};
+                    "PrivacyPolicy",
+                    "GT-016"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "2";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Validar a página de Política de Privacidade no Edge", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);

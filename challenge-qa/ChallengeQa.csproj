@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Folder Include="Drivers\" />
+    <Folder Include="Evidence\" />
     <Folder Include="performance-tests\results\" />
     <Folder Include="Support\" />
   </ItemGroup>

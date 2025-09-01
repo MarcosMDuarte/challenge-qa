@@ -1,0 +1,37 @@
+﻿# Build
+bin/
+obj/
+TestResults/
+*.exe
+*.dll
+*.pdb
+
+# Usuário / IDE
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# Configurações locais
+launchSettings.json
+
+# Pacotes NuGet (serão restaurados pelo restore)
+packages/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Backup do VS
+*.csproj.user
+*.csproj.Backup*
+
+# node.js / k6
+node_modules/
+results/
+*.html
+
+# Outros
+.DS_Store
+Thumbs.db

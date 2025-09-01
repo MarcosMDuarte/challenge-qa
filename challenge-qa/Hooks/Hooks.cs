@@ -30,11 +30,11 @@ namespace ChallengeQa.Hooks
         }
 
 
-        [AfterScenario]
+        /*[AfterScenario]
         public void AfterScenario()
         {
             _driver?.Quit();
         }
-
+        */
     }
 }

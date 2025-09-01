@@ -136,18 +136,18 @@ namespace ChallengeQa.Features
                     "válido (<tipo>)\r\n  Given que acesso a página de subscription\r\n  When seleciono o" +
                     " nível \"Pós-graduação\"\r\n  And seleciono o curso \"Mestrado em Engenharia de Softw" +
                     "are\"\r\n  And clico em \"Avançar\" no curso\r\n  And preencho o formulário de cadastro" +
-                    " com <campo> inválido do tipo <tipo>\r\n  And clico em \"Avançar\" no cadastro\r\n  Th" +
-                    "en devo visualizar a mensagem de erro de <campo> do tipo <tipo> \r\n\r\nExamples:\r\n " +
-                    " | campo     | tipo     |\r\n  | CPF   | curto       |\r\n  | CPF   | longo       |\r" +
-                    "\n  | CPF   | letras      |\r\n  | CPF   | vazio       |\r\n  | Nome      | vazio    " +
-                    "|\r\n  | Sobrenome | vazio    |\r\n  | Email     | falta_arroba |\r\n  | Email     | f" +
-                    "alta_tld   |\r\n  | Email     | dois_pontos |\r\n  | Email     | comeca_ponto |\r\n  |" +
-                    " Email     | tld_curto   |\r\n  | Celular   | curto    |\r\n  | Celular   | longo   " +
-                    " |\r\n  | Celular | letras  |\r\n  | Celular | vazio   |\r\n  | CEP   | curto       |\r" +
-                    "\n  | CEP   | longo       |\r\n  | CEP   | letras      |\r\n  | CEP   | caracteres  |" +
-                    "\r\n  | CEP   | vazio       |\r\n  | Cidade    | vazio    |\r\n  | Estado    | vazio  " +
-                    "  |\r\n  | Pais      | vazio    |\r\n  | Data      | futuro   |\r\n  | Telefone   | cu" +
-                    "rto    |\r\n  | Telefone   | longo    |\r\n  | Telefone   | letras  |\r\n\r\n\r\n", global::Io.Cucumber.Messages.Types.SourceMediaType.TEXT_X_CUCUMBER_GHERKIN_PLAIN);
+                    " com <campo> inválido do tipo <tipo>\r\n  #And clico em \"Avançar\" no cadastro\r\n  T" +
+                    "hen devo visualizar a mensagem de erro de <campo> do tipo <tipo> \r\n\r\nExamples:\r\n" +
+                    "  | campo     | tipo     |\r\n  | CPF   | curto       |\r\n  | CPF   | longo       |" +
+                    "\r\n  | CPF   | letras      |\r\n  | CPF   | vazio       |\r\n  | Nome      | vazio   " +
+                    " |\r\n  | Sobrenome | vazio    |\r\n  | Email     | falta_arroba |\r\n  | Email     | " +
+                    "falta_tld   |\r\n  | Email     | dois_pontos |\r\n  | Email     | comeca_ponto |\r\n  " +
+                    "| Email     | tld_curto   |\r\n  | Celular   | curto    |\r\n  | Celular   | longo  " +
+                    "  |\r\n  | Celular | letras  |\r\n  | Celular | vazio   |\r\n  | CEP   | curto       |" +
+                    "\r\n  | CEP   | longo       |\r\n  | CEP   | letras      |\r\n  | CEP   | caracteres  " +
+                    "|\r\n  | CEP   | vazio       |\r\n  | Cidade    | vazio    |\r\n  | Estado    | vazio " +
+                    "   |\r\n  | Pais      | vazio    |\r\n  | Data      | futuro   |\r\n  | Telefone   | c" +
+                    "urto    |\r\n  | Telefone   | longo    |\r\n  | Telefone   | letras  |\r\n\r\n\r\n", global::Io.Cucumber.Messages.Types.SourceMediaType.TEXT_X_CUCUMBER_GHERKIN_PLAIN);
         }
         
         private static global::Io.Cucumber.Messages.Types.GherkinDocument GherkinDocumentFunc()
@@ -155,1024 +155,943 @@ namespace ChallengeQa.Features
             return new global::Io.Cucumber.Messages.Types.GherkinDocument("Features/Subscription.feature", new global::Io.Cucumber.Messages.Types.Feature(new global::Io.Cucumber.Messages.Types.Location(1, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "en-US", "Feature", "Subscription", "  Como usuário\r\n  Quero me inscrever em um curso\r\n  Para acessar o formulário de " +
                         "matrícula", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.FeatureChild>(new global::Io.Cucumber.Messages.Types.FeatureChild[] {
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(1)), "@ListaCursos", "a54f2bda643e2e5ba1fe847e3be72385"),
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(14)), "@GT-001", "e32aeb824c8d8a5898e24b564a373b7f")}), "Scenario Outline", "Validação da lista de cursos", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(8, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "8be4fb25b36ff453b422ba7f6286786f"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "78af55de1e7e3c5f94cc755e80d63039"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(10, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a lista de cursos de \"<codigoNivel>\"", null, null, "0cd653e9e5a5ae59aba2868a6b1465ea")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(1)), "@ListaCursos", "779055989fb9c15d9de7b8370c53d0bb"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(14)), "@GT-001", "0aad15fca86ba450ab28cc7730eca1f1")}), "Scenario Outline", "Validação da lista de cursos", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(8, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "deace9a2ce472d54bc520fbea24899e0"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "86ce47b8d352d05fb0af5ef886fb6ef4"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(10, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a lista de cursos de \"<codigoNivel>\"", null, null, "b9c62ac0cfae2e5c8255f357126983e8")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
                                                     new global::Io.Cucumber.Messages.Types.Examples(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "Examples", "", "", new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(5)), "nivel"),
-                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(22)), "codigoNivel")}), "e2896725493ae05c935e3c06ea195a6b"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
+                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(22)), "codigoNivel")}), "8522bd236a8b515ea40bcb84967ea1b7"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(14, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(14, new System.Nullable<long>(5)), "Graduação"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(14, new System.Nullable<long>(22)), "Graduacao")}), "219d21443ee55057b767a089522e62cd"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(14, new System.Nullable<long>(22)), "Graduacao")}), "2a72e0581d783b54a50d31d03bf40751"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(15, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(15, new System.Nullable<long>(5)), "Pós-graduação"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(15, new System.Nullable<long>(22)), "PosGraduacao")}), "dae39bff876fc558839f3f5e023774ea")}), "50b5cdb6b7b28a53a13517c2f290b821")}), "da792850f964bc51946aae30a5832c68")),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(15, new System.Nullable<long>(22)), "PosGraduacao")}), "9d825aac5d3f5f529fc62166af40bd2f")}), "7dbc4d633a132c5ca4974dc39622deb2")}), "4948d84894a9a25f970815e336743ebf")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(1)), "@Navegacao", "e421f28da9923a5581e2eac4f3a62d0c"),
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(12)), "@GT-002", "7abb76c8e873f45e85a8d0c023e50284")}), "Scenario Outline", "Navegar até a página de <nivel> e retornar", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "95032edc220f8259964807f17300543a"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(20, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "ece11b81dfd3cc5ea251790412270c48"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(21, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem \"Selecione seu curso de <nivel>\"", null, null, "f0fc4a610300da58b109ba632fa11da5"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(22, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no botão voltar", null, null, "32eb65eb385e1d59bc11d767a30c1d9d"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(1)), "@Navegacao", "6d3f2ba4c8cdc25cbb8152997ac85fd1"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(12)), "@GT-002", "0ec9e019459c555bb102ece8d3d3a975")}), "Scenario Outline", "Navegar até a página de <nivel> e retornar", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "1d8c3f8a41c3545fb5920deb557a9ffc"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(20, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "139a579538de115bbf0144683fea3780"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(21, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem \"Selecione seu curso de <nivel>\"", null, null, "e995283c366d545699920d4efb06d6d6"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(22, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "clico no botão voltar", null, null, "12fe2499e994eb5e90d6af25d16761b8"),
                                                     new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(23, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem \"Escolha o seu nível de ensino e embarque nessa aventu" +
-                                                            "ra!\"", null, null, "74646b399343fd53af633e475a94b90f")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
+                                                            "ra!\"", null, null, "c6ef33c441d42659b64bd66ea0f40ee7")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
                                                     new global::Io.Cucumber.Messages.Types.Examples(new global::Io.Cucumber.Messages.Types.Location(25, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "Examples", "", "", new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
-                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(5)), "nivel")}), "a77a16ca41981453a41c3e8d2c5ce459"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
+                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(5)), "nivel")}), "d35e05d97b4069598814542da5b3e3e1"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(5)), "Graduação")}), "9d6e5136fd06ac568854a49cafd4245e"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(5)), "Graduação")}), "df30308b0ded785b9f4a4a74cfe4f91f"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(5)), "Pós-graduação")}), "a300a65058297953838c9d37efe4eb4d")}), "e1ad5426978444588f156cb2fe83111b")}), "4372c7fc97c4f8578a8dc3ab5a2eead4")),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(5)), "Pós-graduação")}), "9e8bd199d33dc754993b1facadbe2470")}), "2b4d2d76e7c2df5088c29e68bf5c882f")}), "e3244f037705065888a597a6378c07dc")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(32, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(31, new System.Nullable<long>(1)), "@FluxoCadastro", "dd3fb781aeb1bc579b1f0c04603323cd"),
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(31, new System.Nullable<long>(16)), "@GT-003", "abbb3057c203e7579dbc1dcefe3d2b5d")}), "Scenario Outline", "Validação do fluxo de cadastro para cada curso", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(33, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "d0c9e3dde8fd2a5d8cf531306a5fe515"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(34, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "39878d5595bfd552b80a60fdf9f05259"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(35, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "cada curso de \"<codigoNivel>\" deve permitir avançar para o formulário", null, null, "8374980bd2e7c455b009588e39ab47b4")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(31, new System.Nullable<long>(1)), "@FluxoCadastro", "cb2b5367e504e05f9fa8f12cf1946d8f"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(31, new System.Nullable<long>(16)), "@GT-003", "c437ec24a0111a5b81daa6e477afda7f")}), "Scenario Outline", "Validação do fluxo de cadastro para cada curso", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(33, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "9dfd91d1e75a255888104a2943f0f1e5"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(34, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "67e65ca55ca4fe528e7e6201b424bdea"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(35, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "cada curso de \"<codigoNivel>\" deve permitir avançar para o formulário", null, null, "f81b9e68c90ad354acc564d2b1e951c0")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
                                                     new global::Io.Cucumber.Messages.Types.Examples(new global::Io.Cucumber.Messages.Types.Location(37, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "Examples", "", "", new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(38, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(38, new System.Nullable<long>(5)), "nivel"),
-                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(38, new System.Nullable<long>(22)), "codigoNivel")}), "23a8f8fd309b0b538fe8c73fd8fdf553"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
+                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(38, new System.Nullable<long>(22)), "codigoNivel")}), "b62a5944d663ed5cb0b933ca2e2bc9e6"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(39, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(39, new System.Nullable<long>(5)), "Graduação"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(39, new System.Nullable<long>(22)), "Graduacao")}), "2bcc89b890a3e057b7817c209c574bd6"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(39, new System.Nullable<long>(22)), "Graduacao")}), "ab695fa5429cc35d88ec70429e213f0d"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(40, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(40, new System.Nullable<long>(5)), "Pós-graduação"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(40, new System.Nullable<long>(22)), "PosGraduacao")}), "ed379b324c719551a0bfe437f64d6972")}), "1ac34d1b06ffe2588f1d099409176e34")}), "89c9126fb16f215ba5d95d0f3be89640")),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(40, new System.Nullable<long>(22)), "PosGraduacao")}), "82f785be18b8c75087e8a8e56a5f190d")}), "137d5355e449cf57ae2e15bbc9e5e5d4")}), "f4a4baf33c356e57b8558ba40ef51408")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(44, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(43, new System.Nullable<long>(1)), "@SelecaoCursoInvalida", "6a53b4ade0551b5290561d8380890647"),
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(43, new System.Nullable<long>(23)), "@GT-004", "3f0b0f510cd0175dbdb17242a5c8274b")}), "Scenario Outline", "Tentativa de avançar sem selecionar um curso de <nivel>", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(45, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "1c9a45fa4177185a81a94d99a4dabc45"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(46, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "d499a5854d001d5fa2f43c3d8ba935f1"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(47, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em Avançar sem selecionar um curso", null, null, "c0e4f27ded1fe851be5fd36e866463bb"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(48, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o alerta \"Por favor, selecione um curso...\"", null, null, "8f5fea8ac90d2259b3dbbbb5c6ed6d49")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(43, new System.Nullable<long>(1)), "@SelecaoCursoInvalida", "adddc206b4efbb5db7632d9b230e8f21"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(43, new System.Nullable<long>(23)), "@GT-004", "528458ccae3d445ba6c8627835f64406")}), "Scenario Outline", "Tentativa de avançar sem selecionar um curso de <nivel>", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(45, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "182e7ba6a5741259ad053dd6ee2595fe"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(46, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"<nivel>\"", null, null, "20034ea941c58e5aaaafb8512185f6a7"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(47, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em Avançar sem selecionar um curso", null, null, "0db726fbcaadd45f9a1facce80972d17"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(48, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar o alerta \"Por favor, selecione um curso...\"", null, null, "26172f9b0e888a5b8a4e93d05f48ed51")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
                                                     new global::Io.Cucumber.Messages.Types.Examples(new global::Io.Cucumber.Messages.Types.Location(50, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "Examples", "", "", new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(51, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
-                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(51, new System.Nullable<long>(5)), "nivel")}), "ec4d59783db3e653acc6bb7ecf3a6a44"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
+                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(51, new System.Nullable<long>(5)), "nivel")}), "30c254c70b159258895e48e98afc96f2"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(52, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(52, new System.Nullable<long>(5)), "Graduação")}), "1c7d28a082e9945088abb2f6ede01cfa"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(52, new System.Nullable<long>(5)), "Graduação")}), "fdf8e36f95ed3a529fd3e2d254defba3"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(53, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(53, new System.Nullable<long>(5)), "Pós-graduação")}), "19cf5c66cdf5ab5486ddd25cc5d4b606")}), "f6477ab8a0e9a458a880c16ea43a07f0")}), "b3bffaf3610b3d5b97b676e606ae1eea")),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(53, new System.Nullable<long>(5)), "Pós-graduação")}), "d0e2c49cf13fd051aed18f3e4206793a")}), "69ed2787a510185ba2f069f0f28a799d")}), "44ee711e6072a75684e761680fa70086")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(56, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(55, new System.Nullable<long>(1)), "@CadastroCompleto", "5c66ac4533415a5daaee15beeca941c5"),
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(55, new System.Nullable<long>(19)), "@GT-005", "06be687e3ec41d58800cd51625164a14")}), "Scenario", "Cadastro com todos os campos preenchidos corretamente", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(57, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "e3c41aad30f63e56b4a7d42ad750e06d"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(58, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"Pós-graduação\"", null, null, "5b7200b59157485f823616d8990a37b7"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(59, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "seleciono o curso \"Mestrado em Engenharia de Software\"", null, null, "2fb4babb8667985087ebaa905c39e635"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(60, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Avançar\" no curso", null, null, "25bc4cb633109a55b17bdfaf8d324d9c"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(61, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o formulário de cadastro com dados válidos", null, null, "07ddd852d453f451818b61c0ec8dc17d"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(62, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Avançar\" no cadastro", null, null, "d30c953f0cd1af5db69da8873c1f12dc"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(63, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem \"Sua jornada começa aqui!\"", null, null, "ec3d4f227123885490767a2605708f25")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "7f257b679e27ae50b5319ceabb6864e7")),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(55, new System.Nullable<long>(1)), "@CadastroCompleto", "98d77a09d143145983bd0a59a62f2e8f"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(55, new System.Nullable<long>(19)), "@GT-005", "51338ec1b95afd549ced72f30a69851a")}), "Scenario", "Cadastro com todos os campos preenchidos corretamente", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(57, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "b3f41112a1b4fc57af4cbcaaea33ae38"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(58, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"Pós-graduação\"", null, null, "df215680d9b6a458a7fcea6e2c2968bd"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(59, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "seleciono o curso \"Mestrado em Engenharia de Software\"", null, null, "438ba570be162456bd47d741ef0bf242"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(60, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Avançar\" no curso", null, null, "351c119e36e9465a9f8eb18d8dc43478"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(61, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o formulário de cadastro com dados válidos", null, null, "0fe959b5c90ab452acd532e9c8a70d33"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(62, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Avançar\" no cadastro", null, null, "271203f94cd4a352aa47bce903534c54"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(63, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem \"Sua jornada começa aqui!\"", null, null, "00b7030af6fba95e99575cf3eb5e08e9")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "4151f55e4b24b355b03fe80259f1ebe7")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(67, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(66, new System.Nullable<long>(1)), "@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(66, new System.Nullable<long>(19)), "@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), "Scenario Outline", "Cadastro com <campo> inválido (<tipo>)", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(68, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "2d4bbcde5ae2da51a1929c38dafcb97a"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(69, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"Pós-graduação\"", null, null, "989fb2f7012f485ebc18249ecae9f00d"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(70, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "seleciono o curso \"Mestrado em Engenharia de Software\"", null, null, "4d0fcc9fffc8475ebfc278d71256b240"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(71, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Avançar\" no curso", null, null, "ba38e8f5a2aa1e50aafcc5ab65e248a7"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(72, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o formulário de cadastro com <campo> inválido do tipo <tipo>", null, null, "1c1bc8d78f0f3258813687e1c4e5609f"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(73, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Avançar\" no cadastro", null, null, "ca98c814ac94ad5da213c35650fa4605"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(74, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem de erro de <campo> do tipo <tipo>", null, null, "ee0c187c2b7fce5e8cfd13ec483e4b75")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(66, new System.Nullable<long>(1)), "@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(66, new System.Nullable<long>(19)), "@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), "Scenario Outline", "Cadastro com <campo> inválido (<tipo>)", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(68, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso a página de subscription", null, null, "0182450a0b432e55a2dc13f64a474104"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(69, new System.Nullable<long>(3)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "seleciono o nível \"Pós-graduação\"", null, null, "0460bf5d11bb305c95e0d7f53ebd5532"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(70, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "seleciono o curso \"Mestrado em Engenharia de Software\"", null, null, "599fe500f560ac509a22df5838bf5091"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(71, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Avançar\" no curso", null, null, "5ef11c366549565e9073ec2cecfa6710"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(72, new System.Nullable<long>(3)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o formulário de cadastro com <campo> inválido do tipo <tipo>", null, null, "0ee2828bc38b0b56bbb24e74dbd89f4d"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(74, new System.Nullable<long>(3)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem de erro de <campo> do tipo <tipo>", null, null, "8c548c14805e205f9f434a96493a9787")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
                                                     new global::Io.Cucumber.Messages.Types.Examples(new global::Io.Cucumber.Messages.Types.Location(76, new System.Nullable<long>(1)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "Examples", "", "", new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(77, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(77, new System.Nullable<long>(5)), "campo"),
-                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(77, new System.Nullable<long>(17)), "tipo")}), "cd5d72615ffc51548b04cf4019aede58"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
+                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(77, new System.Nullable<long>(17)), "tipo")}), "76827b2984331d56964d86f0635ef469"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(78, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(78, new System.Nullable<long>(5)), "CPF"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(78, new System.Nullable<long>(13)), "curto")}), "99165641ffc46d59b4f97fe1c808d561"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(78, new System.Nullable<long>(13)), "curto")}), "1c1ff9c5798cff50afe9e57e23d141e0"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(79, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(79, new System.Nullable<long>(5)), "CPF"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(79, new System.Nullable<long>(13)), "longo")}), "4fa66f38d6f6d55e93d8c2656fb1ca48"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(79, new System.Nullable<long>(13)), "longo")}), "04fd475b38da94599a83bb181ab5eb64"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(80, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(80, new System.Nullable<long>(5)), "CPF"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(80, new System.Nullable<long>(13)), "letras")}), "0dba0a0a2b644c5b9bf4b212f5f486d4"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(80, new System.Nullable<long>(13)), "letras")}), "bd70d40a6c1ff653a4a2c4de53e7034a"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(81, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(81, new System.Nullable<long>(5)), "CPF"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(81, new System.Nullable<long>(13)), "vazio")}), "11dd22d87eaeca5d89ae74ca0f97535d"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(81, new System.Nullable<long>(13)), "vazio")}), "e4b81deab3d2f5539d2d1de6003d66c7"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(82, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(82, new System.Nullable<long>(5)), "Nome"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(82, new System.Nullable<long>(17)), "vazio")}), "9e15f4e6b8bc62509b965b3d6b60a7e2"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(82, new System.Nullable<long>(17)), "vazio")}), "8b24621acbd41759b5821ef4e0e9012c"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(83, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(83, new System.Nullable<long>(5)), "Sobrenome"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(83, new System.Nullable<long>(17)), "vazio")}), "c880c8edb9d0535eb549d5b40291de44"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(83, new System.Nullable<long>(17)), "vazio")}), "51219c77faa8ec5a81f2953c64b3cc9b"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(84, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(84, new System.Nullable<long>(5)), "Email"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(84, new System.Nullable<long>(17)), "falta_arroba")}), "479451cbdb2c6a5a9a18e2519a642e75"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(84, new System.Nullable<long>(17)), "falta_arroba")}), "b36e1151df513959bc18f97d73f7ea49"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(85, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(85, new System.Nullable<long>(5)), "Email"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(85, new System.Nullable<long>(17)), "falta_tld")}), "03971553629b2b5eabf39488b6bc6a6a"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(85, new System.Nullable<long>(17)), "falta_tld")}), "af4ab7111ddcb75c9bbfefcd07c9c13b"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(86, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(86, new System.Nullable<long>(5)), "Email"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(86, new System.Nullable<long>(17)), "dois_pontos")}), "dd0175744b14ce5d89bccb0effa3013d"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(86, new System.Nullable<long>(17)), "dois_pontos")}), "a2a7c2dcf8f6b85eb2eb3274a0617876"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(87, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(87, new System.Nullable<long>(5)), "Email"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(87, new System.Nullable<long>(17)), "comeca_ponto")}), "b121d749a0010e59abb514c0cbbca2b3"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(87, new System.Nullable<long>(17)), "comeca_ponto")}), "d923881d6a07155d87af9cee4960d1ca"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(88, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(88, new System.Nullable<long>(5)), "Email"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(88, new System.Nullable<long>(17)), "tld_curto")}), "8fa6af0d02c1f752941435a2b34c7e56"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(88, new System.Nullable<long>(17)), "tld_curto")}), "7f389aea917ae55c9247bbe24d4dc149"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(89, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(89, new System.Nullable<long>(5)), "Celular"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(89, new System.Nullable<long>(17)), "curto")}), "754251010fb08053adc98863f4e292a9"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(89, new System.Nullable<long>(17)), "curto")}), "29235f58baee4a56bf3ed98b352ead9b"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(90, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(90, new System.Nullable<long>(5)), "Celular"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(90, new System.Nullable<long>(17)), "longo")}), "f90583df50274455b83dc53c74f04a85"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(90, new System.Nullable<long>(17)), "longo")}), "6c2fff8650c7dd5eab386f08860cc3bf"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(91, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(91, new System.Nullable<long>(5)), "Celular"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(91, new System.Nullable<long>(15)), "letras")}), "a142af7d0bc56a5ab132ea92aa81b368"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(91, new System.Nullable<long>(15)), "letras")}), "25c272e2ccd79f59b003d5d1f3cb1d2e"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(92, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(92, new System.Nullable<long>(5)), "Celular"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(92, new System.Nullable<long>(15)), "vazio")}), "de6669c997ff1650b444ec12f42cc0af"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(92, new System.Nullable<long>(15)), "vazio")}), "0c9a0dec4383d25292f62c18aa7ee68f"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(93, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(93, new System.Nullable<long>(5)), "CEP"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(93, new System.Nullable<long>(13)), "curto")}), "d6694b65de960b578d6cc26dff7cf273"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(93, new System.Nullable<long>(13)), "curto")}), "5032b3623e849354a5bf6b85dde7aee7"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(94, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(94, new System.Nullable<long>(5)), "CEP"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(94, new System.Nullable<long>(13)), "longo")}), "331474aea7e58d5e961d4de4b3e0f325"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(94, new System.Nullable<long>(13)), "longo")}), "78fef14f818faf529506c7e0d8461bc6"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(95, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(95, new System.Nullable<long>(5)), "CEP"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(95, new System.Nullable<long>(13)), "letras")}), "f2a24a8e12c47a549640b3c4d1f99901"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(95, new System.Nullable<long>(13)), "letras")}), "45fc5dbceef9045cb7cadc3001a2f67d"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(96, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(96, new System.Nullable<long>(5)), "CEP"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(96, new System.Nullable<long>(13)), "caracteres")}), "e24524cb29fb395a8c474e3790b2cbe0"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(96, new System.Nullable<long>(13)), "caracteres")}), "1e052bd3a4e11950a930835a7bfc9ab4"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(97, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(97, new System.Nullable<long>(5)), "CEP"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(97, new System.Nullable<long>(13)), "vazio")}), "cf2e484960d869538b3a43c21d0d05ec"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(97, new System.Nullable<long>(13)), "vazio")}), "bf6e66ba26ba565dbd8dcaa3b9388f66"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(98, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(98, new System.Nullable<long>(5)), "Cidade"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(98, new System.Nullable<long>(17)), "vazio")}), "39b09f74fb30cd518ff4594dff248e97"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(98, new System.Nullable<long>(17)), "vazio")}), "81c3aaabb3ce415eadd51a224aaa6023"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(99, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(99, new System.Nullable<long>(5)), "Estado"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(99, new System.Nullable<long>(17)), "vazio")}), "c4413f252e890959a6c93bf2e6ea0572"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(99, new System.Nullable<long>(17)), "vazio")}), "572697c1a298685ba0424da66a09f532"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(100, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(100, new System.Nullable<long>(5)), "Pais"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(100, new System.Nullable<long>(17)), "vazio")}), "22f68056e94ce75bad5af5e7673718fb"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(100, new System.Nullable<long>(17)), "vazio")}), "52d84e17e0db9e508dd9f417e777c78c"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(101, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(101, new System.Nullable<long>(5)), "Data"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(101, new System.Nullable<long>(17)), "futuro")}), "0f56d90d70c4ca5d81dc5560b3715844"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(101, new System.Nullable<long>(17)), "futuro")}), "bb054d71c902ed51b2a72e6486e2553c"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(102, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(102, new System.Nullable<long>(5)), "Telefone"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(102, new System.Nullable<long>(18)), "curto")}), "63942662bb83a150b8329d994603b551"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(102, new System.Nullable<long>(18)), "curto")}), "5bc159d0d99d3b5a83038554b7d19209"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(103, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(103, new System.Nullable<long>(5)), "Telefone"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(103, new System.Nullable<long>(18)), "longo")}), "b3ca9317c586675290b776933b9c8048"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(103, new System.Nullable<long>(18)), "longo")}), "26498077a8d892568ebf3c0c29eb7e19"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(104, new System.Nullable<long>(3)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(104, new System.Nullable<long>(5)), "Telefone"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(104, new System.Nullable<long>(18)), "letras")}), "2f8c33e12045ee53a3e7d1cb5909e900")}), "eb58ca40c043195b8fb88513d00a3eb8")}), "33d32d717bfdd3569e9c0ac28c4ab7e3"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[0]));
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(104, new System.Nullable<long>(18)), "letras")}), "f0d81b031d78a75293a96e2a225f2a86")}), "7090432f007b625f989ded59bd9c505c")}), "8bb8e1ae66e68a53a1836d419bf669fe"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[] {
+                            new global::Io.Cucumber.Messages.Types.Comment(new global::Io.Cucumber.Messages.Types.Location(73, new System.Nullable<long>(1)), "  #And clico em \"Avançar\" no cadastro")}));
         }
         
         private static global::System.Collections.Generic.IEnumerable<Io.Cucumber.Messages.Types.Pickle> PicklesFunc()
         {
             return new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Pickle>(new global::Io.Cucumber.Messages.Types.Pickle[] {
-                        new global::Io.Cucumber.Messages.Types.Pickle("8721ee2999f6c853b068191a772823f8", "Features/Subscription.feature", "Validação da lista de cursos", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                        new global::Io.Cucumber.Messages.Types.Pickle("20323edc9141d35680f73d53aa4a17bc", "Features/Subscription.feature", "Validação da lista de cursos", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8be4fb25b36ff453b422ba7f6286786f",
-                                                        "219d21443ee55057b767a089522e62cd"}), "e398e48e77e5525f9352e0a93da3bcb7", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "deace9a2ce472d54bc520fbea24899e0",
+                                                        "2a72e0581d783b54a50d31d03bf40751"}), "16085f7b278c3451a95a5dc5613942b0", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "78af55de1e7e3c5f94cc755e80d63039",
-                                                        "219d21443ee55057b767a089522e62cd"}), "50f0871e8a8a275aa825096879557627", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
+                                                        "86ce47b8d352d05fb0af5ef886fb6ef4",
+                                                        "2a72e0581d783b54a50d31d03bf40751"}), "3ee900ef3d895d5eb8947a07eae50aee", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0cd653e9e5a5ae59aba2868a6b1465ea",
-                                                        "219d21443ee55057b767a089522e62cd"}), "dad0630d42122b598e7b2aaf57a7fb88", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a lista de cursos de \"Graduacao\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@ListaCursos", "a54f2bda643e2e5ba1fe847e3be72385"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-001", "e32aeb824c8d8a5898e24b564a373b7f")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "da792850f964bc51946aae30a5832c68",
-                                        "219d21443ee55057b767a089522e62cd"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("034e131d19d4365e99c034d174663b37", "Features/Subscription.feature", "Validação da lista de cursos", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "b9c62ac0cfae2e5c8255f357126983e8",
+                                                        "2a72e0581d783b54a50d31d03bf40751"}), "0dcb38d13f3de2578005f1c546b7b2b6", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a lista de cursos de \"Graduacao\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@ListaCursos", "779055989fb9c15d9de7b8370c53d0bb"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-001", "0aad15fca86ba450ab28cc7730eca1f1")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "4948d84894a9a25f970815e336743ebf",
+                                        "2a72e0581d783b54a50d31d03bf40751"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("f4829d94dff66955ba5ed94da02c3b84", "Features/Subscription.feature", "Validação da lista de cursos", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8be4fb25b36ff453b422ba7f6286786f",
-                                                        "dae39bff876fc558839f3f5e023774ea"}), "6caccb1b15905357853a852fc38db08d", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "deace9a2ce472d54bc520fbea24899e0",
+                                                        "9d825aac5d3f5f529fc62166af40bd2f"}), "fd7a34aa88d77256a87c4198a3534d67", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "78af55de1e7e3c5f94cc755e80d63039",
-                                                        "dae39bff876fc558839f3f5e023774ea"}), "6a122aab7c384f5b85b352518cc87a7d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "86ce47b8d352d05fb0af5ef886fb6ef4",
+                                                        "9d825aac5d3f5f529fc62166af40bd2f"}), "794f060656cfb65396c76c1bf16257b8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0cd653e9e5a5ae59aba2868a6b1465ea",
-                                                        "dae39bff876fc558839f3f5e023774ea"}), "b81030cfb799b35797ee9328f5df1b43", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a lista de cursos de \"PosGraduacao\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@ListaCursos", "a54f2bda643e2e5ba1fe847e3be72385"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-001", "e32aeb824c8d8a5898e24b564a373b7f")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "da792850f964bc51946aae30a5832c68",
-                                        "dae39bff876fc558839f3f5e023774ea"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("05bc70808f5e655d9568e0ac5cc3010c", "Features/Subscription.feature", "Navegar até a página de Graduação e retornar", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "b9c62ac0cfae2e5c8255f357126983e8",
+                                                        "9d825aac5d3f5f529fc62166af40bd2f"}), "a68ad98d921fb150961aecf1d9a5a64d", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a lista de cursos de \"PosGraduacao\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@ListaCursos", "779055989fb9c15d9de7b8370c53d0bb"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-001", "0aad15fca86ba450ab28cc7730eca1f1")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "4948d84894a9a25f970815e336743ebf",
+                                        "9d825aac5d3f5f529fc62166af40bd2f"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("b4c548b5b4828557bc7d6756249fc0ed", "Features/Subscription.feature", "Navegar até a página de Graduação e retornar", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "95032edc220f8259964807f17300543a",
-                                                        "9d6e5136fd06ac568854a49cafd4245e"}), "1868d49c8531d85a880b244538165eb6", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "1d8c3f8a41c3545fb5920deb557a9ffc",
+                                                        "df30308b0ded785b9f4a4a74cfe4f91f"}), "beef28977dcfa55886f783b8520e99d5", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ece11b81dfd3cc5ea251790412270c48",
-                                                        "9d6e5136fd06ac568854a49cafd4245e"}), "fa2b145da1e9d65a8b515cc1aadf2d4f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
+                                                        "139a579538de115bbf0144683fea3780",
+                                                        "df30308b0ded785b9f4a4a74cfe4f91f"}), "ad1835cd27d75954b6a36857aa795738", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "f0fc4a610300da58b109ba632fa11da5",
-                                                        "9d6e5136fd06ac568854a49cafd4245e"}), "346ef9ac93ef8b518a7fcfac62524e0c", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Selecione seu curso de Graduação\""),
+                                                        "e995283c366d545699920d4efb06d6d6",
+                                                        "df30308b0ded785b9f4a4a74cfe4f91f"}), "7bdcb9fc916ab054929fd8f89884b1d0", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Selecione seu curso de Graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "32eb65eb385e1d59bc11d767a30c1d9d",
-                                                        "9d6e5136fd06ac568854a49cafd4245e"}), "0185d2b622ce4b5da2ede3b3550927fc", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no botão voltar"),
+                                                        "12fe2499e994eb5e90d6af25d16761b8",
+                                                        "df30308b0ded785b9f4a4a74cfe4f91f"}), "38b56d887218fd5cad235cc3ff8f98e8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no botão voltar"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "74646b399343fd53af633e475a94b90f",
-                                                        "9d6e5136fd06ac568854a49cafd4245e"}), "5ac4bb76f418c85097f3fd99c05fdaa5", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Escolha o seu nível de ensino e embarque nessa aventu" +
+                                                        "c6ef33c441d42659b64bd66ea0f40ee7",
+                                                        "df30308b0ded785b9f4a4a74cfe4f91f"}), "a0adfde6bf78be508f913b8d82db797c", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Escolha o seu nível de ensino e embarque nessa aventu" +
                                                 "ra!\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Navegacao", "e421f28da9923a5581e2eac4f3a62d0c"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-002", "7abb76c8e873f45e85a8d0c023e50284")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "4372c7fc97c4f8578a8dc3ab5a2eead4",
-                                        "9d6e5136fd06ac568854a49cafd4245e"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("64b299a89a45ec52b242bec16057a0f3", "Features/Subscription.feature", "Navegar até a página de Pós-graduação e retornar", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Navegacao", "6d3f2ba4c8cdc25cbb8152997ac85fd1"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-002", "0ec9e019459c555bb102ece8d3d3a975")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "e3244f037705065888a597a6378c07dc",
+                                        "df30308b0ded785b9f4a4a74cfe4f91f"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("dfef9b8a280d675a90566f0093706627", "Features/Subscription.feature", "Navegar até a página de Pós-graduação e retornar", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "95032edc220f8259964807f17300543a",
-                                                        "a300a65058297953838c9d37efe4eb4d"}), "e34cd23d286ac3568efe5e17eb86e561", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "1d8c3f8a41c3545fb5920deb557a9ffc",
+                                                        "9e8bd199d33dc754993b1facadbe2470"}), "805dc51b66913d53bc0e7751d325a1d4", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ece11b81dfd3cc5ea251790412270c48",
-                                                        "a300a65058297953838c9d37efe4eb4d"}), "e669af6b083bdf5e9db22c87a8357e9d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "139a579538de115bbf0144683fea3780",
+                                                        "9e8bd199d33dc754993b1facadbe2470"}), "10d0c14dafc71d5c8e342912de4931a9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "f0fc4a610300da58b109ba632fa11da5",
-                                                        "a300a65058297953838c9d37efe4eb4d"}), "514a427e5fa42d5dac48e0abeef91bfc", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Selecione seu curso de Pós-graduação\""),
+                                                        "e995283c366d545699920d4efb06d6d6",
+                                                        "9e8bd199d33dc754993b1facadbe2470"}), "3d1dbd75b3fde85d9276108c874fdcbe", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Selecione seu curso de Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "32eb65eb385e1d59bc11d767a30c1d9d",
-                                                        "a300a65058297953838c9d37efe4eb4d"}), "6c1f4c0cda431359b7a936bd67ae48cf", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no botão voltar"),
+                                                        "12fe2499e994eb5e90d6af25d16761b8",
+                                                        "9e8bd199d33dc754993b1facadbe2470"}), "14405c8e5eb01450a7d39e0609b17c97", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico no botão voltar"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "74646b399343fd53af633e475a94b90f",
-                                                        "a300a65058297953838c9d37efe4eb4d"}), "55be1fc7aa67f756b09c478eeb84ab96", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Escolha o seu nível de ensino e embarque nessa aventu" +
+                                                        "c6ef33c441d42659b64bd66ea0f40ee7",
+                                                        "9e8bd199d33dc754993b1facadbe2470"}), "b093c4228c4a6855a010c7af1f4859ec", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Escolha o seu nível de ensino e embarque nessa aventu" +
                                                 "ra!\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Navegacao", "e421f28da9923a5581e2eac4f3a62d0c"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-002", "7abb76c8e873f45e85a8d0c023e50284")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "4372c7fc97c4f8578a8dc3ab5a2eead4",
-                                        "a300a65058297953838c9d37efe4eb4d"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("285a7804dc8c405eac3f8dfbd794278e", "Features/Subscription.feature", "Validação do fluxo de cadastro para cada curso", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Navegacao", "6d3f2ba4c8cdc25cbb8152997ac85fd1"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-002", "0ec9e019459c555bb102ece8d3d3a975")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "e3244f037705065888a597a6378c07dc",
+                                        "9e8bd199d33dc754993b1facadbe2470"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("d9a8ea6f5b9a1c5790a42aa445095e8d", "Features/Subscription.feature", "Validação do fluxo de cadastro para cada curso", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "d0c9e3dde8fd2a5d8cf531306a5fe515",
-                                                        "2bcc89b890a3e057b7817c209c574bd6"}), "73246b2bf61de05c850350e129e66409", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "9dfd91d1e75a255888104a2943f0f1e5",
+                                                        "ab695fa5429cc35d88ec70429e213f0d"}), "9a24fd0a73463c5b857d084096c7900c", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "39878d5595bfd552b80a60fdf9f05259",
-                                                        "2bcc89b890a3e057b7817c209c574bd6"}), "d7027b5ea87c6157a8103ffcfee75982", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
+                                                        "67e65ca55ca4fe528e7e6201b424bdea",
+                                                        "ab695fa5429cc35d88ec70429e213f0d"}), "7facc748afcc0155a8aed9e14de5d9bb", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8374980bd2e7c455b009588e39ab47b4",
-                                                        "2bcc89b890a3e057b7817c209c574bd6"}), "462c23f5ffaf5750a26d2795fc9f1ae0", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "cada curso de \"Graduacao\" deve permitir avançar para o formulário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@FluxoCadastro", "dd3fb781aeb1bc579b1f0c04603323cd"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-003", "abbb3057c203e7579dbc1dcefe3d2b5d")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "89c9126fb16f215ba5d95d0f3be89640",
-                                        "2bcc89b890a3e057b7817c209c574bd6"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("f5ce17b2456a0456aa2039cb6b0c2b91", "Features/Subscription.feature", "Validação do fluxo de cadastro para cada curso", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "f81b9e68c90ad354acc564d2b1e951c0",
+                                                        "ab695fa5429cc35d88ec70429e213f0d"}), "ebe99cf92e16e95d9cf5b8433edde726", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "cada curso de \"Graduacao\" deve permitir avançar para o formulário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@FluxoCadastro", "cb2b5367e504e05f9fa8f12cf1946d8f"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-003", "c437ec24a0111a5b81daa6e477afda7f")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "f4a4baf33c356e57b8558ba40ef51408",
+                                        "ab695fa5429cc35d88ec70429e213f0d"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("e1e26c0a292cdd5ab673b5a9a37b6b3d", "Features/Subscription.feature", "Validação do fluxo de cadastro para cada curso", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "d0c9e3dde8fd2a5d8cf531306a5fe515",
-                                                        "ed379b324c719551a0bfe437f64d6972"}), "0628253cdf44ac5f98e8b269838c0b55", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "9dfd91d1e75a255888104a2943f0f1e5",
+                                                        "82f785be18b8c75087e8a8e56a5f190d"}), "badeddb7ed6714558b6ed0c6302cde55", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "39878d5595bfd552b80a60fdf9f05259",
-                                                        "ed379b324c719551a0bfe437f64d6972"}), "2e228ea6ec055c578bac8b6e52137750", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "67e65ca55ca4fe528e7e6201b424bdea",
+                                                        "82f785be18b8c75087e8a8e56a5f190d"}), "02bd0f4c8bc8275994001100c6aa10aa", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8374980bd2e7c455b009588e39ab47b4",
-                                                        "ed379b324c719551a0bfe437f64d6972"}), "162e3846330e995eab17dcca5b86c2e8", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "cada curso de \"PosGraduacao\" deve permitir avançar para o formulário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@FluxoCadastro", "dd3fb781aeb1bc579b1f0c04603323cd"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-003", "abbb3057c203e7579dbc1dcefe3d2b5d")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "89c9126fb16f215ba5d95d0f3be89640",
-                                        "ed379b324c719551a0bfe437f64d6972"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("77ccd53415f6b156ad71462df841fb47", "Features/Subscription.feature", "Tentativa de avançar sem selecionar um curso de Graduação", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "f81b9e68c90ad354acc564d2b1e951c0",
+                                                        "82f785be18b8c75087e8a8e56a5f190d"}), "3b8af079481bee59990eb0343a335545", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "cada curso de \"PosGraduacao\" deve permitir avançar para o formulário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@FluxoCadastro", "cb2b5367e504e05f9fa8f12cf1946d8f"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-003", "c437ec24a0111a5b81daa6e477afda7f")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "f4a4baf33c356e57b8558ba40ef51408",
+                                        "82f785be18b8c75087e8a8e56a5f190d"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("f6e095cfcea09f5889371f90a16ff46e", "Features/Subscription.feature", "Tentativa de avançar sem selecionar um curso de Graduação", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c9a45fa4177185a81a94d99a4dabc45",
-                                                        "1c7d28a082e9945088abb2f6ede01cfa"}), "106135497229625b8b5496c90af33328", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "182e7ba6a5741259ad053dd6ee2595fe",
+                                                        "fdf8e36f95ed3a529fd3e2d254defba3"}), "770a5d2aee5b195fa43d7b6901b0f8e1", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "d499a5854d001d5fa2f43c3d8ba935f1",
-                                                        "1c7d28a082e9945088abb2f6ede01cfa"}), "85ae1e7834880458aab5d2ffbe6f275f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
+                                                        "20034ea941c58e5aaaafb8512185f6a7",
+                                                        "fdf8e36f95ed3a529fd3e2d254defba3"}), "cea65b76e8f34c5592941a77a1b07869", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "c0e4f27ded1fe851be5fd36e866463bb",
-                                                        "1c7d28a082e9945088abb2f6ede01cfa"}), "9f6f3f33cee2045d8ebbef629d74c4f3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em Avançar sem selecionar um curso"),
+                                                        "0db726fbcaadd45f9a1facce80972d17",
+                                                        "fdf8e36f95ed3a529fd3e2d254defba3"}), "f367b5b64ae4ab50a29af944ab8e94c1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em Avançar sem selecionar um curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8f5fea8ac90d2259b3dbbbb5c6ed6d49",
-                                                        "1c7d28a082e9945088abb2f6ede01cfa"}), "10a36c1148fc9b5db5fd4ceea11b7c9f", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o alerta \"Por favor, selecione um curso...\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@SelecaoCursoInvalida", "6a53b4ade0551b5290561d8380890647"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-004", "3f0b0f510cd0175dbdb17242a5c8274b")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "b3bffaf3610b3d5b97b676e606ae1eea",
-                                        "1c7d28a082e9945088abb2f6ede01cfa"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("b33178f95b651c529c697763fb1ad4ff", "Features/Subscription.feature", "Tentativa de avançar sem selecionar um curso de Pós-graduação", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "26172f9b0e888a5b8a4e93d05f48ed51",
+                                                        "fdf8e36f95ed3a529fd3e2d254defba3"}), "8b29fec96ab47a5d831133f0cadac85d", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o alerta \"Por favor, selecione um curso...\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@SelecaoCursoInvalida", "adddc206b4efbb5db7632d9b230e8f21"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-004", "528458ccae3d445ba6c8627835f64406")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "44ee711e6072a75684e761680fa70086",
+                                        "fdf8e36f95ed3a529fd3e2d254defba3"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("699086d62141425ab80c3ce02c9134c6", "Features/Subscription.feature", "Tentativa de avançar sem selecionar um curso de Pós-graduação", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c9a45fa4177185a81a94d99a4dabc45",
-                                                        "19cf5c66cdf5ab5486ddd25cc5d4b606"}), "94ed4bfdceac74509c203c06be9e4bfb", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "182e7ba6a5741259ad053dd6ee2595fe",
+                                                        "d0e2c49cf13fd051aed18f3e4206793a"}), "80dc713629b61650918683c1264b7a3f", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "d499a5854d001d5fa2f43c3d8ba935f1",
-                                                        "19cf5c66cdf5ab5486ddd25cc5d4b606"}), "19bab7d23c3c5159a2d810468df39243", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "20034ea941c58e5aaaafb8512185f6a7",
+                                                        "d0e2c49cf13fd051aed18f3e4206793a"}), "ebcd177d6936155ab95ca48928527436", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "c0e4f27ded1fe851be5fd36e866463bb",
-                                                        "19cf5c66cdf5ab5486ddd25cc5d4b606"}), "678bbc01f3a1375782da6c2f377a839d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em Avançar sem selecionar um curso"),
+                                                        "0db726fbcaadd45f9a1facce80972d17",
+                                                        "d0e2c49cf13fd051aed18f3e4206793a"}), "a37d0f3b7b5fc55c89cc1115db75c85e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em Avançar sem selecionar um curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8f5fea8ac90d2259b3dbbbb5c6ed6d49",
-                                                        "19cf5c66cdf5ab5486ddd25cc5d4b606"}), "157f78894f297d5d8dca1bf4db6b2e23", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o alerta \"Por favor, selecione um curso...\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@SelecaoCursoInvalida", "6a53b4ade0551b5290561d8380890647"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-004", "3f0b0f510cd0175dbdb17242a5c8274b")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "b3bffaf3610b3d5b97b676e606ae1eea",
-                                        "19cf5c66cdf5ab5486ddd25cc5d4b606"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("4c0d747200b30b58ab5edb7774965018", "Features/Subscription.feature", "Cadastro com todos os campos preenchidos corretamente", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "26172f9b0e888a5b8a4e93d05f48ed51",
+                                                        "d0e2c49cf13fd051aed18f3e4206793a"}), "0b9afef6dc889651b94de0be71692c08", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar o alerta \"Por favor, selecione um curso...\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@SelecaoCursoInvalida", "adddc206b4efbb5db7632d9b230e8f21"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-004", "528458ccae3d445ba6c8627835f64406")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "44ee711e6072a75684e761680fa70086",
+                                        "d0e2c49cf13fd051aed18f3e4206793a"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("85a9bc6ce622365d9b06dbc369c41335", "Features/Subscription.feature", "Cadastro com todos os campos preenchidos corretamente", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e3c41aad30f63e56b4a7d42ad750e06d"}), "3b35b33dcf738558a4fb35ffac89536d", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "b3f41112a1b4fc57af4cbcaaea33ae38"}), "7e5af5c7272fea5a9bb0e8f76595f10e", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "5b7200b59157485f823616d8990a37b7"}), "b9a649ccc76ad75d84f761cdafad0e42", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "df215680d9b6a458a7fcea6e2c2968bd"}), "c2a0c55b778e09538c45b27d3202136b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2fb4babb8667985087ebaa905c39e635"}), "7cfee7f2f833655695095ad4c0b726d8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "438ba570be162456bd47d741ef0bf242"}), "7d5559c11b331454b6be3afa31323588", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "25bc4cb633109a55b17bdfaf8d324d9c"}), "06307f0d6a800154b305556e6d9063be", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "351c119e36e9465a9f8eb18d8dc43478"}), "e6c9a6178e2ead57bc8936bbdff76a53", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "07ddd852d453f451818b61c0ec8dc17d"}), "620d43732bbfdf589251fbb11fc759c4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com dados válidos"),
+                                                        "0fe959b5c90ab452acd532e9c8a70d33"}), "86e0e5d40deebb53b6afd920642a2448", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com dados válidos"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "d30c953f0cd1af5db69da8873c1f12dc"}), "54bcd05f9239925fb65fd5a19b9ac7e5", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "271203f94cd4a352aa47bce903534c54"}), "703de726b7c0d057b402b2be606d3a63", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ec3d4f227123885490767a2605708f25"}), "2eb0310412a0fc548335c30aef4304a8", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Sua jornada começa aqui!\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroCompleto", "5c66ac4533415a5daaee15beeca941c5"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-005", "06be687e3ec41d58800cd51625164a14")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "7f257b679e27ae50b5319ceabb6864e7"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("4d14b059298dea5c8db78109ff79a727", "Features/Subscription.feature", "Cadastro com CPF inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "00b7030af6fba95e99575cf3eb5e08e9"}), "fa49af4bbeeca95caaee4a670e847686", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem \"Sua jornada começa aqui!\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroCompleto", "98d77a09d143145983bd0a59a62f2e8f"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-005", "51338ec1b95afd549ced72f30a69851a")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "4151f55e4b24b355b03fe80259f1ebe7"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("28803c51cf86225dbfe4bedc059ca5b2", "Features/Subscription.feature", "Cadastro com CPF inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "99165641ffc46d59b4f97fe1c808d561"}), "0f7d6878e9eef65099e881eb77eee59a", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "1c1ff9c5798cff50afe9e57e23d141e0"}), "281c58b7ed734157a59a9a21e22a8e50", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "99165641ffc46d59b4f97fe1c808d561"}), "1129f11561da3553b18732bdfb14318a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "1c1ff9c5798cff50afe9e57e23d141e0"}), "ccd18d59de8a3858a854b307ecd33e11", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "99165641ffc46d59b4f97fe1c808d561"}), "be700a98353af858a4017db8acce1d54", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "1c1ff9c5798cff50afe9e57e23d141e0"}), "1ff693c43362995fa9eafeaebf562d0c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "99165641ffc46d59b4f97fe1c808d561"}), "3e282844ef1ca9579123240408d746b4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "1c1ff9c5798cff50afe9e57e23d141e0"}), "db19626c1062fc58b6349cdf56317476", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "99165641ffc46d59b4f97fe1c808d561"}), "daa1119aa352705491f9c3b97b0db85c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo curto"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "1c1ff9c5798cff50afe9e57e23d141e0"}), "579da94c0d7a2e54b7e8cf74557323ec", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo curto"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "99165641ffc46d59b4f97fe1c808d561"}), "de0650514a842f52a3084023387f2689", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "1c1ff9c5798cff50afe9e57e23d141e0"}), "beddba29a665fa5b965423c22d7aa3c2", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "1c1ff9c5798cff50afe9e57e23d141e0"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("c6072dbadfc7f95983306268baac5d9e", "Features/Subscription.feature", "Cadastro com CPF inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "99165641ffc46d59b4f97fe1c808d561"}), "dd6006f81b84b059b91dc82894812ca8", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "99165641ffc46d59b4f97fe1c808d561"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("34555fdac75aeb59aaaee920ef91aec5", "Features/Subscription.feature", "Cadastro com CPF inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "04fd475b38da94599a83bb181ab5eb64"}), "4f1305028a42c95594dc1c5f0ca6b4e3", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"}), "0ed90efb3fe70f50ae608e475ddfa44a", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "04fd475b38da94599a83bb181ab5eb64"}), "d8a06ff497371454993dcbe9e946751e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"}), "5a9568c600ba12599dc4daeacc7cf0a4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "04fd475b38da94599a83bb181ab5eb64"}), "56cbe02d14a66e55bcde56bd2fa68788", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"}), "437101c368a43c5d9a19afe698dac492", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "04fd475b38da94599a83bb181ab5eb64"}), "b80fb89183cf415b84a81f93022fd960", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"}), "bc0c0c30dbe834539288295c84dd0c4b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "04fd475b38da94599a83bb181ab5eb64"}), "207a006c9870a3599050c36c41b92b8f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo longo"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"}), "a8a1c0174ca56852b9878b76d936a7c7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo longo"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "04fd475b38da94599a83bb181ab5eb64"}), "6572bf5a9040e556862b72e035336f53", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "04fd475b38da94599a83bb181ab5eb64"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("c76cc3bde93a835f92ade87d5c75204f", "Features/Subscription.feature", "Cadastro com CPF inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"}), "64d2ead9ce434251bb03c7783f0dbaa4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "bd70d40a6c1ff653a4a2c4de53e7034a"}), "23ad77ed2b271556b9e067bb58c9bc75", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"}), "236d51ddccc4e45a9452732f31ee51b0", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "4fa66f38d6f6d55e93d8c2656fb1ca48"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("50a3631de32e0a5dba432b892fedc74e", "Features/Subscription.feature", "Cadastro com CPF inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "bd70d40a6c1ff653a4a2c4de53e7034a"}), "ec51611d91ae8d53836c1f0d07786918", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"}), "71d92e112673975cb5fca028b67d0de9", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "bd70d40a6c1ff653a4a2c4de53e7034a"}), "6352355e746c755590a90f6187a39fa4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"}), "2d2ab410a69bbf54b50e5cc40c312b59", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "bd70d40a6c1ff653a4a2c4de53e7034a"}), "207da31a53c5035e99ab8f51f55f239c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"}), "e99ee78439dc2e5ca588fd4efe9679d9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "bd70d40a6c1ff653a4a2c4de53e7034a"}), "ee44ef74c53e695285d02ddb7cd4e443", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo letras"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"}), "ff12d934d36ce453be9f2e43cb49a031", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "bd70d40a6c1ff653a4a2c4de53e7034a"}), "f469fe1096f46758ba7b4f7625649cbd", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "bd70d40a6c1ff653a4a2c4de53e7034a"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("cad47edb79ba6256bbb71f99df439342", "Features/Subscription.feature", "Cadastro com CPF inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"}), "992567bb03beda52997699c56558557c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo letras"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "e4b81deab3d2f5539d2d1de6003d66c7"}), "15c81a5416e29152bba7aab7e7c23a3e", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"}), "01105900f8b865518e044afc5a3e9392", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "e4b81deab3d2f5539d2d1de6003d66c7"}), "b157fa2f54350b57bc0e5bb8584d6259", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"}), "0ffb5da2a9135c56a8b8cb5eff4f8cd0", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "0dba0a0a2b644c5b9bf4b212f5f486d4"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("e63793fa96cb3c5394ae32aa397963db", "Features/Subscription.feature", "Cadastro com CPF inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "e4b81deab3d2f5539d2d1de6003d66c7"}), "a34a723b94742f578e8680cf83cf619f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "11dd22d87eaeca5d89ae74ca0f97535d"}), "6cd6047649ade153b0f2ccc34e9c1cf4", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "e4b81deab3d2f5539d2d1de6003d66c7"}), "a2b310c56d590f598aaf64e1d5e567cf", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "11dd22d87eaeca5d89ae74ca0f97535d"}), "29a33ac9c31d8351b3cb89950652ee4d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "e4b81deab3d2f5539d2d1de6003d66c7"}), "76ca94296a9fe853a304dd4320aaa433", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "11dd22d87eaeca5d89ae74ca0f97535d"}), "926f76ab7274555c91f1cde26f069208", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "e4b81deab3d2f5539d2d1de6003d66c7"}), "c87bcd07d12aa35dab0850292f439c08", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "e4b81deab3d2f5539d2d1de6003d66c7"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("fb595a9b529754528940740fbc5e6a84", "Features/Subscription.feature", "Cadastro com Nome inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "11dd22d87eaeca5d89ae74ca0f97535d"}), "3ef009261bc26959921177886a40d5ce", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "8b24621acbd41759b5821ef4e0e9012c"}), "c2307e9427d4765bb68f0c7c1c266670", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "11dd22d87eaeca5d89ae74ca0f97535d"}), "4d4b383d85dc8752894d35959bc12c84", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CPF inválido do tipo vazio"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "8b24621acbd41759b5821ef4e0e9012c"}), "11aca8db0683755681d6f5c2912b3a41", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "11dd22d87eaeca5d89ae74ca0f97535d"}), "36d5d9fa9534d2519aa8e71d8da7d4c0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "8b24621acbd41759b5821ef4e0e9012c"}), "bdb735c0db3cc15dbd66132d35ec7b37", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "11dd22d87eaeca5d89ae74ca0f97535d"}), "b258c929d7702e5aa26a3b3143522f57", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CPF do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "11dd22d87eaeca5d89ae74ca0f97535d"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("142c0bfcc2533657823b587b32e5f644", "Features/Subscription.feature", "Cadastro com Nome inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "8b24621acbd41759b5821ef4e0e9012c"}), "57bc55135497bb51aded9f624e584294", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"}), "5812b5fea42c1b51a0305fb7cf925e27", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "8b24621acbd41759b5821ef4e0e9012c"}), "8f3b95db5f2c4c59af785f26e01e0901", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Nome inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"}), "b4468b61e4657251b97ae69baa305d0d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "8b24621acbd41759b5821ef4e0e9012c"}), "8d06b468f48ba2539fb126c69f291280", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Nome do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "8b24621acbd41759b5821ef4e0e9012c"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("36064ae72e3e1352ba2c93aeb1a56064", "Features/Subscription.feature", "Cadastro com Sobrenome inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"}), "201de10f6166805999a9cc58615f3a18", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "51219c77faa8ec5a81f2953c64b3cc9b"}), "afaa2244e3f8095fa1c65ee825585715", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"}), "27eec662d3aa83598d2f5a46a6b14fc7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "51219c77faa8ec5a81f2953c64b3cc9b"}), "c477feb2425ed25b895a15fd2281f171", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"}), "ef0163fdae81d35c93d0702c132b8385", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Nome inválido do tipo vazio"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "51219c77faa8ec5a81f2953c64b3cc9b"}), "2aacf01c3009f2508ab5736b526e8a17", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"}), "e56486930598b65cb7986725015f3507", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "51219c77faa8ec5a81f2953c64b3cc9b"}), "9430971f91401f53bfbdae969220c64c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"}), "3b19c55781092d509c72ebf4fdb535ae", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Nome do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "9e15f4e6b8bc62509b965b3d6b60a7e2"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("3cc1f7e5fcffb25c9cd7f13421d3c0de", "Features/Subscription.feature", "Cadastro com Sobrenome inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "51219c77faa8ec5a81f2953c64b3cc9b"}), "4ecf5c2d24938256a64c88670a42da5a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Sobrenome inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "c880c8edb9d0535eb549d5b40291de44"}), "2abd7e6b2c610c5398fcd24a97ffedbb", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "51219c77faa8ec5a81f2953c64b3cc9b"}), "cb21328b5b3144569c623532e06efb73", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Sobrenome do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "51219c77faa8ec5a81f2953c64b3cc9b"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("ad0c55d14b44c754b364c8f6d7a8a9b5", "Features/Subscription.feature", "Cadastro com Email inválido (falta_arroba)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "c880c8edb9d0535eb549d5b40291de44"}), "86033d5300bd525b81c98f8f8e570156", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "b36e1151df513959bc18f97d73f7ea49"}), "1f035e88a373205392e7bd2726b5d51d", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "c880c8edb9d0535eb549d5b40291de44"}), "cb21417cfa504a51ab3119c0857fd86a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "b36e1151df513959bc18f97d73f7ea49"}), "c48211cb08f5b15ab7ff657ea0f1c96b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "c880c8edb9d0535eb549d5b40291de44"}), "af0f3e779d91105cb115e3fe074474ac", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "b36e1151df513959bc18f97d73f7ea49"}), "d93ba0e2ed2a305492974fdd3d1e3f01", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "c880c8edb9d0535eb549d5b40291de44"}), "c0ac1e2c08f8065790bcd626e5b60443", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Sobrenome inválido do tipo vazio"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "b36e1151df513959bc18f97d73f7ea49"}), "b8b82d189a5c395c9078fedf77feb8db", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "c880c8edb9d0535eb549d5b40291de44"}), "a41c02cd5678d551beb1e33def8b3aa7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "b36e1151df513959bc18f97d73f7ea49"}), "4daa851c5db54e56ac8262291912283f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo falta_arroba"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "c880c8edb9d0535eb549d5b40291de44"}), "873767f70185175183f431159f97faa5", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Sobrenome do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "c880c8edb9d0535eb549d5b40291de44"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("90c169bf08056d56a75087b901e37056", "Features/Subscription.feature", "Cadastro com Email inválido (falta_arroba)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "b36e1151df513959bc18f97d73f7ea49"}), "8a13070a12fcf95ca17e124a0ad4a016", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo falta_arroba")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "b36e1151df513959bc18f97d73f7ea49"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("cdb29628badb9f569831b1b1596fce12", "Features/Subscription.feature", "Cadastro com Email inválido (falta_tld)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "479451cbdb2c6a5a9a18e2519a642e75"}), "410797cb18f7bd5b98024f729f531d63", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "af4ab7111ddcb75c9bbfefcd07c9c13b"}), "83cbb8592055fe5d916f52909766c43c", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "479451cbdb2c6a5a9a18e2519a642e75"}), "2539a130c730145db3719f9597b84c9f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "af4ab7111ddcb75c9bbfefcd07c9c13b"}), "625aee8021e4a85ab9fcb8827fa7f598", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "479451cbdb2c6a5a9a18e2519a642e75"}), "5f2db166cdb9ed5a86704d7711e1cafe", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "af4ab7111ddcb75c9bbfefcd07c9c13b"}), "2d2a253a7189fa54804421375a282e8e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "479451cbdb2c6a5a9a18e2519a642e75"}), "9a099d7c6d9ed754a87205098226114b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "af4ab7111ddcb75c9bbfefcd07c9c13b"}), "caa16ceb0c092e548dfeea6cf5848760", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "479451cbdb2c6a5a9a18e2519a642e75"}), "68d9a97ef5a87559b1a94e402af65f2c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo falta_arroba"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "af4ab7111ddcb75c9bbfefcd07c9c13b"}), "30f74f4fd7792e53bd4f8beafd5cb1df", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo falta_tld"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "479451cbdb2c6a5a9a18e2519a642e75"}), "9d82e695aa0c4f54b1fb7763d34dfc57", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "af4ab7111ddcb75c9bbfefcd07c9c13b"}), "62e98f2cf7529757b93403cc87e2b2a0", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo falta_tld")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "af4ab7111ddcb75c9bbfefcd07c9c13b"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("0ffdb5a736cf785ab4289425fca01483", "Features/Subscription.feature", "Cadastro com Email inválido (dois_pontos)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "479451cbdb2c6a5a9a18e2519a642e75"}), "a190c864cbb596518ca1f8a97cfcd4b2", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo falta_arroba")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "479451cbdb2c6a5a9a18e2519a642e75"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("5c11437a5a086852a48c13ffbefcd4ca", "Features/Subscription.feature", "Cadastro com Email inválido (falta_tld)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "a2a7c2dcf8f6b85eb2eb3274a0617876"}), "789697c9bd8d035aa329153e7d6825b8", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "03971553629b2b5eabf39488b6bc6a6a"}), "61cfce1a1a374e51a9ece5507ad9a318", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "a2a7c2dcf8f6b85eb2eb3274a0617876"}), "9678935fc73e1e56ac605a5de9a9c2d1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "03971553629b2b5eabf39488b6bc6a6a"}), "9ea4c9ad52413253bba0ae62c6fd7cc9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "a2a7c2dcf8f6b85eb2eb3274a0617876"}), "0b23036d9a48ed5cb72b3b53e36556f3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "03971553629b2b5eabf39488b6bc6a6a"}), "b3e571de3295eb578702e57b63dacdc2", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "a2a7c2dcf8f6b85eb2eb3274a0617876"}), "158419330da02058bc54a6935615906a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "03971553629b2b5eabf39488b6bc6a6a"}), "e5446fd8c46c21558275cc0040f727e9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "a2a7c2dcf8f6b85eb2eb3274a0617876"}), "dcf3323cb9ba825581ca35ae7c08f10c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo dois_pontos"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "03971553629b2b5eabf39488b6bc6a6a"}), "e43dd3487a1c2f5d931d0f2fbc52820e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo falta_tld"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "a2a7c2dcf8f6b85eb2eb3274a0617876"}), "8c6a09011d57a257b44f1efb2964a779", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo dois_pontos")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "a2a7c2dcf8f6b85eb2eb3274a0617876"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("7a6123e658d28c5d89c30b773d3b9f17", "Features/Subscription.feature", "Cadastro com Email inválido (comeca_ponto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "03971553629b2b5eabf39488b6bc6a6a"}), "c7ba765ff02e3254a27f839af01e2b0b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "d923881d6a07155d87af9cee4960d1ca"}), "1b2d3413b339685bb39c44cb84854fbe", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "03971553629b2b5eabf39488b6bc6a6a"}), "8b61529ce450da52ab41af538153f678", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo falta_tld")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "03971553629b2b5eabf39488b6bc6a6a"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("b0dab6dd19f7b25aa45b4442682484f4", "Features/Subscription.feature", "Cadastro com Email inválido (dois_pontos)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "d923881d6a07155d87af9cee4960d1ca"}), "754d81e12abeb6529d58ceff339ea493", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "dd0175744b14ce5d89bccb0effa3013d"}), "e474ddea1fd6f753b7612d6586857c6f", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "d923881d6a07155d87af9cee4960d1ca"}), "15df2a787ada845eafef80af9c990240", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "dd0175744b14ce5d89bccb0effa3013d"}), "9cb93ec4782ce554b9c349abd1ab7540", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "d923881d6a07155d87af9cee4960d1ca"}), "b5d7fac24ec4b45f9081dc527bd40809", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "dd0175744b14ce5d89bccb0effa3013d"}), "1f8f8314855ffa50b01f8bfb148f0a58", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "d923881d6a07155d87af9cee4960d1ca"}), "28372748189ca857af0e6148b5b6d6ac", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo comeca_ponto"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "dd0175744b14ce5d89bccb0effa3013d"}), "40496c179a364d5eb4870d063b2144bf", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "d923881d6a07155d87af9cee4960d1ca"}), "b5e3843f259a4650b7823220a402ea45", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo comeca_ponto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "d923881d6a07155d87af9cee4960d1ca"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("efe6d8c25670015ca41ff1b9317e2b25", "Features/Subscription.feature", "Cadastro com Email inválido (tld_curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "dd0175744b14ce5d89bccb0effa3013d"}), "d41c80e11ab7b25f91d293879aefb173", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo dois_pontos"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "7f389aea917ae55c9247bbe24d4dc149"}), "f111a7a52971b952a8e98900ce8e2886", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "dd0175744b14ce5d89bccb0effa3013d"}), "909a38624cc1545f84ba1a3ca7559b8c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "7f389aea917ae55c9247bbe24d4dc149"}), "fde8fc22fcf39553adcc29295749407a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "dd0175744b14ce5d89bccb0effa3013d"}), "597b61f4d9048a5a8c94c54fce5ad0b6", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo dois_pontos")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "dd0175744b14ce5d89bccb0effa3013d"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("8b2b787c59e07052b400993bd8a6380a", "Features/Subscription.feature", "Cadastro com Email inválido (comeca_ponto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "7f389aea917ae55c9247bbe24d4dc149"}), "9170f6dafa70e75b8144c05931c75109", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "b121d749a0010e59abb514c0cbbca2b3"}), "e01f848b1234015cb8556f19bd2add42", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "7f389aea917ae55c9247bbe24d4dc149"}), "8b9e9580edbad856961978ec954c96e5", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "b121d749a0010e59abb514c0cbbca2b3"}), "7a97351e94b66958a773051f68ca37bb", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "7f389aea917ae55c9247bbe24d4dc149"}), "2d4366d7261792579ad2e727ac7a7ccd", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo tld_curto"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "b121d749a0010e59abb514c0cbbca2b3"}), "094ffcff1d79b35fa87e9404f348449d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "7f389aea917ae55c9247bbe24d4dc149"}), "ffa76c4ba9d55753821a57d61659238d", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo tld_curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "7f389aea917ae55c9247bbe24d4dc149"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("31675a3fd3b38f528d1a1727319d690a", "Features/Subscription.feature", "Cadastro com Celular inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "b121d749a0010e59abb514c0cbbca2b3"}), "61f146eeb8cadc52b66d60ee9e41bf99", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "29235f58baee4a56bf3ed98b352ead9b"}), "2ec75fba244db752a26cf40cf23ee583", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "b121d749a0010e59abb514c0cbbca2b3"}), "ac669b24337b3250a85f68f379c263e4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo comeca_ponto"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "29235f58baee4a56bf3ed98b352ead9b"}), "d277a69033338156a879608829028705", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "b121d749a0010e59abb514c0cbbca2b3"}), "04e23775ab5c2654836c0e5ac596e9de", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "29235f58baee4a56bf3ed98b352ead9b"}), "466bb9f4f2f3b156a610fd2f7a1bbd0b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "b121d749a0010e59abb514c0cbbca2b3"}), "ba1de91a57ab69568be26fb17e045356", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo comeca_ponto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "b121d749a0010e59abb514c0cbbca2b3"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("92e10b44b130075986553fa7c1f9cc21", "Features/Subscription.feature", "Cadastro com Email inválido (tld_curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "29235f58baee4a56bf3ed98b352ead9b"}), "d88e4ab5880eb5588a8cee74929eb68a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "8fa6af0d02c1f752941435a2b34c7e56"}), "dd20c199b84c47529e5ec761b9cc9492", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "29235f58baee4a56bf3ed98b352ead9b"}), "0c8784898661a5589cc4fe3d5a4e7f96", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo curto"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "8fa6af0d02c1f752941435a2b34c7e56"}), "9b75fe8b9446955197c8af0c67d4554d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "29235f58baee4a56bf3ed98b352ead9b"}), "dd69b407099458568d5afa6743a91801", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "29235f58baee4a56bf3ed98b352ead9b"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("ff4e597f510e0c55a053e9d338c8b268", "Features/Subscription.feature", "Cadastro com Celular inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "8fa6af0d02c1f752941435a2b34c7e56"}), "9ebbb287dc794654a8f2a6bfd4fc0dab", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "6c2fff8650c7dd5eab386f08860cc3bf"}), "654ba39842b9ec55972ef97b55aab81a", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "8fa6af0d02c1f752941435a2b34c7e56"}), "228c583250d86b5d94752d914927f648", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "6c2fff8650c7dd5eab386f08860cc3bf"}), "769598d4770d6750b635161ecfbf8d53", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "8fa6af0d02c1f752941435a2b34c7e56"}), "982c081f847e2a569f11e48b6805660c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Email inválido do tipo tld_curto"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "6c2fff8650c7dd5eab386f08860cc3bf"}), "6f838b9482ed925ab1e9f45cc0526326", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "8fa6af0d02c1f752941435a2b34c7e56"}), "b7fafee4d550c75fa704e8ba2b6659c5", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "6c2fff8650c7dd5eab386f08860cc3bf"}), "bb1545598f42b05c9305fc6936ea6fd2", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "8fa6af0d02c1f752941435a2b34c7e56"}), "fa94905b39718a518b6b431401c203b9", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Email do tipo tld_curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "8fa6af0d02c1f752941435a2b34c7e56"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("e77681e862057959a5fb2bc359afe96e", "Features/Subscription.feature", "Cadastro com Celular inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "6c2fff8650c7dd5eab386f08860cc3bf"}), "071d238fa9ff9b5897338dc22cde7261", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo longo"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "754251010fb08053adc98863f4e292a9"}), "6a85904481a79459ab0b327f0a251397", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "6c2fff8650c7dd5eab386f08860cc3bf"}), "1fa11ef677caa55a93342a8f545641e3", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "6c2fff8650c7dd5eab386f08860cc3bf"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("6a8acb8736a6625881e8d9672d125e01", "Features/Subscription.feature", "Cadastro com Celular inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "754251010fb08053adc98863f4e292a9"}), "cac115ede8bbd95691b341be84058ab1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "25c272e2ccd79f59b003d5d1f3cb1d2e"}), "235f79ef3d17c05789587273eaa0fa7f", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "754251010fb08053adc98863f4e292a9"}), "86852fc851122e588cfca3a97b4100ef", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "25c272e2ccd79f59b003d5d1f3cb1d2e"}), "a3c254fb82210d5389e232e75b948f61", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "754251010fb08053adc98863f4e292a9"}), "57fdd569c6a1f95eb7baf1ac5ffec11a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "25c272e2ccd79f59b003d5d1f3cb1d2e"}), "c6dac463115bc350b1b8bb1d5106a406", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "754251010fb08053adc98863f4e292a9"}), "3c33039d145a5c50a53abd88b9af97b5", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo curto"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "25c272e2ccd79f59b003d5d1f3cb1d2e"}), "f9a18f73140af55981173d39dc2acafa", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "754251010fb08053adc98863f4e292a9"}), "49fdc9d5e09e6c54a821fd625f5eb789", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "25c272e2ccd79f59b003d5d1f3cb1d2e"}), "b4cb7447e145d55a93421dcd2647c980", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo letras"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "754251010fb08053adc98863f4e292a9"}), "6ca81f498a543d549fcfcab024d253dd", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "754251010fb08053adc98863f4e292a9"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("2ebdbe9616865c50be18c92a983ab047", "Features/Subscription.feature", "Cadastro com Celular inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "25c272e2ccd79f59b003d5d1f3cb1d2e"}), "5e88542e484d0751a4c9b49b8c368114", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "25c272e2ccd79f59b003d5d1f3cb1d2e"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("03a5240cea1a765faec6fa8f28bf93db", "Features/Subscription.feature", "Cadastro com Celular inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "f90583df50274455b83dc53c74f04a85"}), "a31dca6cf91bed528de9adc152e19523", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "0c9a0dec4383d25292f62c18aa7ee68f"}), "1bb3b314415359508ade7619ad4c4ae7", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "f90583df50274455b83dc53c74f04a85"}), "0c4ea8bf7620245b81380c1414a6a0ca", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "0c9a0dec4383d25292f62c18aa7ee68f"}), "e29609f74846d75293f4cbddcb402bf9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "f90583df50274455b83dc53c74f04a85"}), "5b1716818364ab598e1bff3120d355c0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "0c9a0dec4383d25292f62c18aa7ee68f"}), "cfe81aac3e3e5855bedea213266d5e49", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "f90583df50274455b83dc53c74f04a85"}), "0b016797ac4d6d57bb7c955d0f1cc786", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "0c9a0dec4383d25292f62c18aa7ee68f"}), "c8066d8051307754a8c009689086c26b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "f90583df50274455b83dc53c74f04a85"}), "20ad877b47cee156b11fbf8d2ecebe1b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo longo"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "0c9a0dec4383d25292f62c18aa7ee68f"}), "a58106f373a98954aff5a1f5b40617b6", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "f90583df50274455b83dc53c74f04a85"}), "296c5e51c51e31588787e923b069cab9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "0c9a0dec4383d25292f62c18aa7ee68f"}), "d3f1d9368e51b45bb63c25150c8c3222", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "0c9a0dec4383d25292f62c18aa7ee68f"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("6cd33fd17544315d8960361713024979", "Features/Subscription.feature", "Cadastro com CEP inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "f90583df50274455b83dc53c74f04a85"}), "c5b81c40062c035da01a92ae29c64ebd", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "f90583df50274455b83dc53c74f04a85"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("624f0d1e3445c55c8ca1d5372879f8e1", "Features/Subscription.feature", "Cadastro com Celular inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "5032b3623e849354a5bf6b85dde7aee7"}), "650427e12d1deb5480f15566912c3f9e", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "a142af7d0bc56a5ab132ea92aa81b368"}), "da9669da7b953d5fa5439952504cffd5", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "5032b3623e849354a5bf6b85dde7aee7"}), "77ee856b80aabb5a97e0d157b08e9c5d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "a142af7d0bc56a5ab132ea92aa81b368"}), "caacc3acbadd9c57a3103f28afcb8660", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "5032b3623e849354a5bf6b85dde7aee7"}), "0764e5f94511e358af093f53fa3a39d3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "a142af7d0bc56a5ab132ea92aa81b368"}), "59b28bec911fbc5dbd5312954896f01b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "5032b3623e849354a5bf6b85dde7aee7"}), "54d89f71b8f433598e16f353a6ce331e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "a142af7d0bc56a5ab132ea92aa81b368"}), "4829134f3e65bb5eb64340caad14a79f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "5032b3623e849354a5bf6b85dde7aee7"}), "45f1bf21db75895e97e955431e8d90b1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo curto"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "a142af7d0bc56a5ab132ea92aa81b368"}), "5d23fb5e41eab65392e07bca57fac814", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo letras"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "5032b3623e849354a5bf6b85dde7aee7"}), "69d7a0ce76821a55b6922ce5e4ac23f6", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "5032b3623e849354a5bf6b85dde7aee7"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("04d56fbbfe708450844423936a59e5d6", "Features/Subscription.feature", "Cadastro com CEP inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "a142af7d0bc56a5ab132ea92aa81b368"}), "3aeb99363f9dd15fb958270a65214594", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "78fef14f818faf529506c7e0d8461bc6"}), "4afcce3f027ea05489c37afdcd200da5", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "a142af7d0bc56a5ab132ea92aa81b368"}), "392fb3f62b85f650bcc8387e9500c077", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "a142af7d0bc56a5ab132ea92aa81b368"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("617e25989169395b888f677561b1a82c", "Features/Subscription.feature", "Cadastro com Celular inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "78fef14f818faf529506c7e0d8461bc6"}), "3946fcd3e647d55fa658796560c17c4f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "de6669c997ff1650b444ec12f42cc0af"}), "5101bd300edf455fa8ef50cbcf1fde2a", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "78fef14f818faf529506c7e0d8461bc6"}), "07ce9a0e56be585b99b6a711a0496480", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "de6669c997ff1650b444ec12f42cc0af"}), "15a5ebe0fc8ff95f85a08d1e43c84acf", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "78fef14f818faf529506c7e0d8461bc6"}), "34b33ebdbe51cd52a610b42f8bb4c40b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "de6669c997ff1650b444ec12f42cc0af"}), "75931eb8ada6d152b0fcf2f8c623eb95", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "78fef14f818faf529506c7e0d8461bc6"}), "874618c75edfef50b85cd54df7ba94ab", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo longo"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "de6669c997ff1650b444ec12f42cc0af"}), "67c6fbc668676d50bec6577f0fd7f6ca", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "78fef14f818faf529506c7e0d8461bc6"}), "1ca0691014527d52bcbb85728d493d28", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "78fef14f818faf529506c7e0d8461bc6"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("d357e1264ef8f05ba985a25c5096fa5a", "Features/Subscription.feature", "Cadastro com CEP inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "de6669c997ff1650b444ec12f42cc0af"}), "4e80357c67495b5dbc825b754e34a73c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Celular inválido do tipo vazio"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "45fc5dbceef9045cb7cadc3001a2f67d"}), "a573ee9de1c2b6529a72bd04c347e489", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "de6669c997ff1650b444ec12f42cc0af"}), "800cb941d32c415cb3b19c89552b60a4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "45fc5dbceef9045cb7cadc3001a2f67d"}), "4e44844a31b3ac519c58ccb1ad3a7d7f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "de6669c997ff1650b444ec12f42cc0af"}), "9ec446fc0afad05b8c1036d8af857207", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Celular do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "de6669c997ff1650b444ec12f42cc0af"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("cd56fbae2fb5a656b36e68c1d755d616", "Features/Subscription.feature", "Cadastro com CEP inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "45fc5dbceef9045cb7cadc3001a2f67d"}), "e61277f421c9245b981fc991b82d9b6c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "d6694b65de960b578d6cc26dff7cf273"}), "9c53780afff2325ba9742cc360c770a0", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "45fc5dbceef9045cb7cadc3001a2f67d"}), "57c7a9c0bb803b5ba81801ff0fd1fdc6", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "d6694b65de960b578d6cc26dff7cf273"}), "6bc4b5fb2d631b5f8e1accb4f3f99e51", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "45fc5dbceef9045cb7cadc3001a2f67d"}), "283a270e6ff90952991c372319f3173a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo letras"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "d6694b65de960b578d6cc26dff7cf273"}), "2728a745ec412b5eafb794c017a68335", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "45fc5dbceef9045cb7cadc3001a2f67d"}), "5ed33ac0a8cfc25fabf7e82cd7e1f75d", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "45fc5dbceef9045cb7cadc3001a2f67d"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("30a56884e311de5796c5b94b30863045", "Features/Subscription.feature", "Cadastro com CEP inválido (caracteres)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "d6694b65de960b578d6cc26dff7cf273"}), "264f33e1b5dc8b5eaf2662e2c51dc258", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "1e052bd3a4e11950a930835a7bfc9ab4"}), "817c1129c9efd253b0497e4a6d2c4bb5", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "d6694b65de960b578d6cc26dff7cf273"}), "a039ac23f576c75b8183ee930b72b439", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo curto"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "1e052bd3a4e11950a930835a7bfc9ab4"}), "3f53533130db3056b5113f7e5bea3d34", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "d6694b65de960b578d6cc26dff7cf273"}), "d86faee72fff1b54b40794faaad43ad7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "1e052bd3a4e11950a930835a7bfc9ab4"}), "a5ae62cd61e95d5d865a875e3f573934", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "d6694b65de960b578d6cc26dff7cf273"}), "542a0830e185b257a65a7b62789ba648", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "d6694b65de960b578d6cc26dff7cf273"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("1d39e460bf48d35d967a6800b665b63a", "Features/Subscription.feature", "Cadastro com CEP inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "1e052bd3a4e11950a930835a7bfc9ab4"}), "b70cd6e21d7ce0529f09c6a3895de4f9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "331474aea7e58d5e961d4de4b3e0f325"}), "81eeca12a0684e5d8f59c42727f9e50c", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "1e052bd3a4e11950a930835a7bfc9ab4"}), "db16e9e9e7d9c05faa9194611fdd7dac", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo caracteres"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "331474aea7e58d5e961d4de4b3e0f325"}), "c8c46302791eab5ba4d36b1f8f5deea9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "1e052bd3a4e11950a930835a7bfc9ab4"}), "df52dbfa3a7bd75e9daa2f49831f91e9", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo caracteres")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "1e052bd3a4e11950a930835a7bfc9ab4"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("4a68a32078cc7b5ab2ec127664443039", "Features/Subscription.feature", "Cadastro com CEP inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "331474aea7e58d5e961d4de4b3e0f325"}), "9749399eb44f305aab1d9799e4d3811a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "bf6e66ba26ba565dbd8dcaa3b9388f66"}), "06cd2a3f2d0e9c5fa2acbb07dcfb34e9", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "331474aea7e58d5e961d4de4b3e0f325"}), "6274e50bae7371569587686fe8f9d87d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "bf6e66ba26ba565dbd8dcaa3b9388f66"}), "d51dbf869839a65ea9d7bfaa6fa53c78", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "331474aea7e58d5e961d4de4b3e0f325"}), "4a909c3172a09f54bac1c9eacf88b0a7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo longo"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "bf6e66ba26ba565dbd8dcaa3b9388f66"}), "36eb3ab8488b395590b83f2f6e1ad35a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "331474aea7e58d5e961d4de4b3e0f325"}), "74a02cea6e0a8a5c8ca728fe2e7bef62", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "bf6e66ba26ba565dbd8dcaa3b9388f66"}), "fe4a27c2eae52c5b9fc3f3b2d819fe2a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "331474aea7e58d5e961d4de4b3e0f325"}), "7b938d1a476d7e52bf61a8d864f4d289", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "331474aea7e58d5e961d4de4b3e0f325"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("c20a2d8fdc577e5aa222940704d50894", "Features/Subscription.feature", "Cadastro com CEP inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "bf6e66ba26ba565dbd8dcaa3b9388f66"}), "5b98ac5d8f97ba5bb28d832976426e4c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "f2a24a8e12c47a549640b3c4d1f99901"}), "412aabe6dd10be51a5412211479109a6", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "bf6e66ba26ba565dbd8dcaa3b9388f66"}), "635198ef7c9db052ad7d55b9e9a95c16", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "bf6e66ba26ba565dbd8dcaa3b9388f66"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("7fb1a3ab0d0bad5a969b3ffd6b817171", "Features/Subscription.feature", "Cadastro com Cidade inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "f2a24a8e12c47a549640b3c4d1f99901"}), "54435b6711cb9a57b47beb9debf2400d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "81c3aaabb3ce415eadd51a224aaa6023"}), "09a1d1f89c339e509a01288778a96d96", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "f2a24a8e12c47a549640b3c4d1f99901"}), "3d5b7456f0830f5cbb06b040f9c1a7b6", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "81c3aaabb3ce415eadd51a224aaa6023"}), "8cd5dc598ce8915385244f0a8ef82d21", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "f2a24a8e12c47a549640b3c4d1f99901"}), "aa13b430d1a4a45c8b4c1d39dddef3fd", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "81c3aaabb3ce415eadd51a224aaa6023"}), "8e190df0b713475bac40034e639fc529", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "f2a24a8e12c47a549640b3c4d1f99901"}), "73f2d560b627b85ca02b24d30169c28e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo letras"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "81c3aaabb3ce415eadd51a224aaa6023"}), "525b9237832c385495c26523c136cfd3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "f2a24a8e12c47a549640b3c4d1f99901"}), "e4bdc8843cc30b53a0d69d50884cd274", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "81c3aaabb3ce415eadd51a224aaa6023"}), "6c24c36f5f2c5553bb29a86c0b80f815", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Cidade inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "f2a24a8e12c47a549640b3c4d1f99901"}), "b2398d6b61540956a3a1ace331ef6bb7", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "f2a24a8e12c47a549640b3c4d1f99901"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("1dffa631f11dee518d284a0cd5a71c08", "Features/Subscription.feature", "Cadastro com CEP inválido (caracteres)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "81c3aaabb3ce415eadd51a224aaa6023"}), "c0b779d19cf0f1558a9cb672cdcf91b8", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Cidade do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "81c3aaabb3ce415eadd51a224aaa6023"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("1934c16577eef7589560736000d7c931", "Features/Subscription.feature", "Cadastro com Estado inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "e24524cb29fb395a8c474e3790b2cbe0"}), "8c13e6c7117ff953b10c9c1576e78b83", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "572697c1a298685ba0424da66a09f532"}), "b5796e54e41f5354912b936f5e07fb19", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "e24524cb29fb395a8c474e3790b2cbe0"}), "043e2b71a2de375bb0fd94dfefd8cb9e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "572697c1a298685ba0424da66a09f532"}), "b819f6fe2c49cf5eaf2d3d1e468dacf0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "e24524cb29fb395a8c474e3790b2cbe0"}), "4087cd293a50d85cabd6dbb187e83f5c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "572697c1a298685ba0424da66a09f532"}), "4d5003038153a559970a8313dd5bb38f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "e24524cb29fb395a8c474e3790b2cbe0"}), "d4965050dea65252a97ef64437420572", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "572697c1a298685ba0424da66a09f532"}), "7d36a06d34737c59b34dac2b39a29b65", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "e24524cb29fb395a8c474e3790b2cbe0"}), "91f6637f4b664d50a08204120a08ee2c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo caracteres"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "572697c1a298685ba0424da66a09f532"}), "b70099a43aad55598e9d030b02becdf4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Estado inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "e24524cb29fb395a8c474e3790b2cbe0"}), "4b8fb96abf047551a2d50d929a6b48cc", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "572697c1a298685ba0424da66a09f532"}), "3fcd5ca30602f259a0c759a710273cb9", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Estado do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "572697c1a298685ba0424da66a09f532"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("abbd35841a68595f9d37d92e1c860c43", "Features/Subscription.feature", "Cadastro com Pais inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "e24524cb29fb395a8c474e3790b2cbe0"}), "6fceb2d4486a555b91fc03b360026316", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo caracteres")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "e24524cb29fb395a8c474e3790b2cbe0"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("79fc95d158829d59995b6d09234dd8a4", "Features/Subscription.feature", "Cadastro com CEP inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "52d84e17e0db9e508dd9f417e777c78c"}), "50e785bfa1bdd157ba3e4798f1e0df4b", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "cf2e484960d869538b3a43c21d0d05ec"}), "7c2fe7f386d86e5ea10a14f1c4bdd964", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "52d84e17e0db9e508dd9f417e777c78c"}), "e300f6675411e750a57d1fc9acd64844", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "cf2e484960d869538b3a43c21d0d05ec"}), "0429c60d3ba9c85d83d9e0406f3e9292", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "52d84e17e0db9e508dd9f417e777c78c"}), "899beaa9a83aec5588133d240586f096", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "cf2e484960d869538b3a43c21d0d05ec"}), "cecd42ddfc3993509670a1de3347b779", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "52d84e17e0db9e508dd9f417e777c78c"}), "8474c8739d97135592aaa5734d162b71", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "cf2e484960d869538b3a43c21d0d05ec"}), "5631ccd50827d158aaa2d0628c6b0ab0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "52d84e17e0db9e508dd9f417e777c78c"}), "3d41529e65a98f57bd365fec7d750696", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Pais inválido do tipo vazio"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "cf2e484960d869538b3a43c21d0d05ec"}), "c33c16e3d9e6b8558e8da935ca48d022", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com CEP inválido do tipo vazio"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "52d84e17e0db9e508dd9f417e777c78c"}), "9924ca7c4f66c359b06b031fc9b9b7f8", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Pais do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "52d84e17e0db9e508dd9f417e777c78c"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("d79adbb40c192f5682aca9593a83503e", "Features/Subscription.feature", "Cadastro com Data inválido (futuro)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "cf2e484960d869538b3a43c21d0d05ec"}), "263fad0a9b1c34558754e003b7e8c4a9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "bb054d71c902ed51b2a72e6486e2553c"}), "2c3c117538ab5858950225f68e3d295e", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "cf2e484960d869538b3a43c21d0d05ec"}), "0fafa34d6e666d56a95702f537f0cb7d", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de CEP do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "cf2e484960d869538b3a43c21d0d05ec"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("ca611bb1a9d8195382a788a695edbcc6", "Features/Subscription.feature", "Cadastro com Cidade inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "bb054d71c902ed51b2a72e6486e2553c"}), "cfa569f60f3ec655a8c3480138b2f3f8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "39b09f74fb30cd518ff4594dff248e97"}), "7c42b5851a7e365c82a7e4c52ee9776f", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "bb054d71c902ed51b2a72e6486e2553c"}), "f85b8ce7b46f585891b65b0297c9c769", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "39b09f74fb30cd518ff4594dff248e97"}), "84b85d84255011588e12bfe1480b8d0b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "bb054d71c902ed51b2a72e6486e2553c"}), "c10aa54e2c2aeb5683de2fe12274aafc", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "39b09f74fb30cd518ff4594dff248e97"}), "bfb2ddce1ef07f568625de4c184840b8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "bb054d71c902ed51b2a72e6486e2553c"}), "6429b5849c9eb256b96255d6bb23822f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Data inválido do tipo futuro"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "39b09f74fb30cd518ff4594dff248e97"}), "ac59289447fd335c94d740089fc6b1e7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "bb054d71c902ed51b2a72e6486e2553c"}), "6af3d5b1fb1b465cad12b71e5ba2078e", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Data do tipo futuro")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "bb054d71c902ed51b2a72e6486e2553c"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("0a8410c39c9eb1548122e041315aeabd", "Features/Subscription.feature", "Cadastro com Telefone inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "39b09f74fb30cd518ff4594dff248e97"}), "3264a2932f8f5758809e905c1dc1e604", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Cidade inválido do tipo vazio"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "5bc159d0d99d3b5a83038554b7d19209"}), "12cdc0d00d0dae52a471636b93e1ffbb", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "39b09f74fb30cd518ff4594dff248e97"}), "a00c1d51f398d95fb6e1ef02f266a10a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "5bc159d0d99d3b5a83038554b7d19209"}), "da368118fcd00a5d9635b5834521c742", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "39b09f74fb30cd518ff4594dff248e97"}), "818388a61cbf7256bcb66ef27e55f15c", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Cidade do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "39b09f74fb30cd518ff4594dff248e97"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("59908ebacdd9145aab8ec4bc003c5056", "Features/Subscription.feature", "Cadastro com Estado inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "5bc159d0d99d3b5a83038554b7d19209"}), "3efa258d0fb77c5c82ddc0503b7833db", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "c4413f252e890959a6c93bf2e6ea0572"}), "fa075419e638c7568e8feb36158a1ec3", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "5bc159d0d99d3b5a83038554b7d19209"}), "0490f4f6f97b6651bd32c1d11d5e1a70", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "c4413f252e890959a6c93bf2e6ea0572"}), "4ef70ed5e964ae5797b9a99766a601cc", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "5bc159d0d99d3b5a83038554b7d19209"}), "85779b65e5e1f555a85d7a8dea8b396b", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Telefone inválido do tipo curto"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "c4413f252e890959a6c93bf2e6ea0572"}), "45ca5c78807b915a8d156d909d04b17a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "5bc159d0d99d3b5a83038554b7d19209"}), "4ec2d86275dba351b5dcd51a4c588bd2", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Telefone do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "5bc159d0d99d3b5a83038554b7d19209"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("f1943bfb70cbc55da4e1044959b92dc6", "Features/Subscription.feature", "Cadastro com Telefone inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "c4413f252e890959a6c93bf2e6ea0572"}), "b19c291b4e0a845d8e0654f4d7479ba3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "26498077a8d892568ebf3c0c29eb7e19"}), "c26dba22e601fd5884ee107bb63b7a69", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "c4413f252e890959a6c93bf2e6ea0572"}), "4c04018b31fb9a5ba81a6d24ea417ce8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Estado inválido do tipo vazio"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "26498077a8d892568ebf3c0c29eb7e19"}), "22721dcdc7968959847f3c8e9cf48478", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "c4413f252e890959a6c93bf2e6ea0572"}), "d5500c28b0c4985991bae582bfb83fdd", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "26498077a8d892568ebf3c0c29eb7e19"}), "0afebc0476ca7f5faf66dcc5edbdec74", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "c4413f252e890959a6c93bf2e6ea0572"}), "9fefc2b7567e355abb505737de21afec", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Estado do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "c4413f252e890959a6c93bf2e6ea0572"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("e4eb4d9fbcd91f53a6e1e5476678346e", "Features/Subscription.feature", "Cadastro com Pais inválido (vazio)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "26498077a8d892568ebf3c0c29eb7e19"}), "dfa65dc8441fe05a838b7c896d82405c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "22f68056e94ce75bad5af5e7673718fb"}), "a3f8d4b9fdf6705695c47da3546960b1", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "26498077a8d892568ebf3c0c29eb7e19"}), "563b79b8b390f45fb925547c74276853", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Telefone inválido do tipo longo"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "22f68056e94ce75bad5af5e7673718fb"}), "c64665dbf71d1b5f85ad3222fe8813e1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "26498077a8d892568ebf3c0c29eb7e19"}), "1275a0c57f2be950bcadf5f9270123cc", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Telefone do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "26498077a8d892568ebf3c0c29eb7e19"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("e84301994882255f8758525c65311f5e", "Features/Subscription.feature", "Cadastro com Telefone inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "22f68056e94ce75bad5af5e7673718fb"}), "e11820c43fdbcc58934f6b8b6ade0781", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
+                                                        "0182450a0b432e55a2dc13f64a474104",
+                                                        "f0d81b031d78a75293a96e2a225f2a86"}), "9d028d4682d5295fb0f7a10821aafaee", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "22f68056e94ce75bad5af5e7673718fb"}), "841a0e0e045fe65daf24b49311bb68f5", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
+                                                        "0460bf5d11bb305c95e0d7f53ebd5532",
+                                                        "f0d81b031d78a75293a96e2a225f2a86"}), "172943f01c7b655cbbc3332cfb3ed6e4", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "22f68056e94ce75bad5af5e7673718fb"}), "f4b56924a315d05fa57f4128b43ad8b7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Pais inválido do tipo vazio"),
+                                                        "599fe500f560ac509a22df5838bf5091",
+                                                        "f0d81b031d78a75293a96e2a225f2a86"}), "103fbf119915755a8e4680f31f5a25e9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "22f68056e94ce75bad5af5e7673718fb"}), "0a68a4face7483519773d8ff6820f94f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
+                                                        "5ef11c366549565e9073ec2cecfa6710",
+                                                        "f0d81b031d78a75293a96e2a225f2a86"}), "cae2e87cba39495b9ddc31c57146c30c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "22f68056e94ce75bad5af5e7673718fb"}), "e962ebff43d969578f94358dab1ff0e0", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Pais do tipo vazio")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "22f68056e94ce75bad5af5e7673718fb"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("3d683c88c94b5f56b678ec409ac5f6bb", "Features/Subscription.feature", "Cadastro com Data inválido (futuro)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "0ee2828bc38b0b56bbb24e74dbd89f4d",
+                                                        "f0d81b031d78a75293a96e2a225f2a86"}), "5ba39c85e2441e5fb879f4f6576ff7b3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Telefone inválido do tipo letras"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "0f56d90d70c4ca5d81dc5560b3715844"}), "5bb33242fb5f5153b199f53ee7cda4bf", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "0f56d90d70c4ca5d81dc5560b3715844"}), "7edf77f7426c1f59b207b9f29bcf34c6", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "0f56d90d70c4ca5d81dc5560b3715844"}), "36940f9af8181d54a65209a930cd2b87", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "0f56d90d70c4ca5d81dc5560b3715844"}), "0586293f98e8d95db4c45df07a809bf8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "0f56d90d70c4ca5d81dc5560b3715844"}), "05793fd9cf60e150a120587b0562440d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Data inválido do tipo futuro"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "0f56d90d70c4ca5d81dc5560b3715844"}), "2db79dd595b4dc5a917f1de5b95790b7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "0f56d90d70c4ca5d81dc5560b3715844"}), "740d7b279156d956a869fb1e3f2a937a", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Data do tipo futuro")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "0f56d90d70c4ca5d81dc5560b3715844"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("0b0c44d0ef59b250b4ae09958aa8ac67", "Features/Subscription.feature", "Cadastro com Telefone inválido (curto)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "63942662bb83a150b8329d994603b551"}), "01040c57c505f45eac7714e66f72cefb", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "63942662bb83a150b8329d994603b551"}), "64c053f116c81556959ab60bb2945108", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "63942662bb83a150b8329d994603b551"}), "4943954510a5ea579e7f60a73b0c1a32", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "63942662bb83a150b8329d994603b551"}), "dd185ed449ac8a5aa0404b057e00f407", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "63942662bb83a150b8329d994603b551"}), "64220a2c626a6f508a4a873cb8cffef6", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Telefone inválido do tipo curto"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "63942662bb83a150b8329d994603b551"}), "be43aaacf3a40e56b7f6a158636498d3", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "63942662bb83a150b8329d994603b551"}), "8c386e65c7728450a3b09ee2b18703be", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Telefone do tipo curto")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "63942662bb83a150b8329d994603b551"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("d894ac3298bed55ab7cf1d0ac57de69a", "Features/Subscription.feature", "Cadastro com Telefone inválido (longo)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "b3ca9317c586675290b776933b9c8048"}), "4697adce2c3b8954bb6d01ab6c9b8ed9", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "b3ca9317c586675290b776933b9c8048"}), "df4d138ef6bf745fb7f9da2d8b7281e8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "b3ca9317c586675290b776933b9c8048"}), "5450b702f6b35b57a0fc827866dc64bb", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "b3ca9317c586675290b776933b9c8048"}), "3e4a7a35ba10d7588db2c1830edd5885", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "b3ca9317c586675290b776933b9c8048"}), "99e0261f466d085aa48389888bcbcef5", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Telefone inválido do tipo longo"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "b3ca9317c586675290b776933b9c8048"}), "dfae0560ada2f45fbb0d94a82c2b5f85", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "b3ca9317c586675290b776933b9c8048"}), "79039f83a7805257bba44277ab8e0d1b", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Telefone do tipo longo")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "b3ca9317c586675290b776933b9c8048"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("b527ac837cadbd5099b392b4651ad21e", "Features/Subscription.feature", "Cadastro com Telefone inválido (letras)", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2d4bbcde5ae2da51a1929c38dafcb97a",
-                                                        "2f8c33e12045ee53a3e7d1cb5909e900"}), "a0ffdc8221d9375680abfc96f6a83203", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso a página de subscription"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "989fb2f7012f485ebc18249ecae9f00d",
-                                                        "2f8c33e12045ee53a3e7d1cb5909e900"}), "d697d00f5e9ce05aae80c630102c2ab1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o nível \"Pós-graduação\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4d0fcc9fffc8475ebfc278d71256b240",
-                                                        "2f8c33e12045ee53a3e7d1cb5909e900"}), "87c0a45140ad27509abc607bc7709440", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "seleciono o curso \"Mestrado em Engenharia de Software\""),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba38e8f5a2aa1e50aafcc5ab65e248a7",
-                                                        "2f8c33e12045ee53a3e7d1cb5909e900"}), "6c8752c379667253bee944a78cca858d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no curso"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1c1bc8d78f0f3258813687e1c4e5609f",
-                                                        "2f8c33e12045ee53a3e7d1cb5909e900"}), "86c6035ea09d985b99c7b53e1c4a71e0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o formulário de cadastro com Telefone inválido do tipo letras"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ca98c814ac94ad5da213c35650fa4605",
-                                                        "2f8c33e12045ee53a3e7d1cb5909e900"}), "e8dec467cc116e5ab1463f6f6fb09253", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Avançar\" no cadastro"),
-                                        new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ee0c187c2b7fce5e8cfd13ec483e4b75",
-                                                        "2f8c33e12045ee53a3e7d1cb5909e900"}), "2b991ee33f9bf05d8ed05fff8fde05b5", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Telefone do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "0a365be23ba3fe5ba6cd3cfa1ce1c8cc"),
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "1180ebf8fadc1056ba921ceabe2708c0")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "33d32d717bfdd3569e9c0ac28c4ab7e3",
-                                        "2f8c33e12045ee53a3e7d1cb5909e900"}))});
+                                                        "8c548c14805e205f9f434a96493a9787",
+                                                        "f0d81b031d78a75293a96e2a225f2a86"}), "8532d9ed9c023a5d8a285d6358113446", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro de Telefone do tipo letras")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@CadastroInvalido", "8d5d1bbce90fc25b8b882b9472e1cbd5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-006", "5d0361d733614a528610b44bfd26ee0e")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "8bb8e1ae66e68a53a1836d419bf669fe",
+                                        "f0d81b031d78a75293a96e2a225f2a86"}))});
         }
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
@@ -1493,9 +1412,6 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line hidden
 #line 72
   await testRunner.AndAsync(string.Format("preencho o formulário de cadastro com {0} inválido do tipo {1}", campo, tipo), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 73
-  await testRunner.AndAsync("clico em \"Avançar\" no cadastro", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
 #line hidden
 #line 74
   await testRunner.ThenAsync(string.Format("devo visualizar a mensagem de erro de {0} do tipo {1}", campo, tipo), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");

@@ -4,7 +4,7 @@
   Para conseguir prosseguir no fluxo de inscrição
 
 
-@Login @Responsividade
+@Login @Responsividade @GT-017
 Scenario Outline: Fluxo de login completo em <resolucao>
   Given que acesso a página inicial com cadastro concluído no curso "<curso>" do nível "<nivel>"
   When defino a janela para "<resolucao>"

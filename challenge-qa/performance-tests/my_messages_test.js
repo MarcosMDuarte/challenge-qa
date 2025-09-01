@@ -12,8 +12,6 @@ export function handleSummary(data) {
     };
 }
 
-}
-
 const users = new SharedArray("usuarios", function () {
     return open('../TestData/usuarios.csv')
         .split('\n')
@@ -38,7 +36,6 @@ export const options = {
     },
 };
 
-
 export default function () {
     const user = users[__VU % users.length];
 
@@ -55,7 +52,6 @@ export default function () {
         'contains Welcome': (r) => r && r.body && r.body.includes('Welcome'),
         'contains Logout button': (r) => r && r.body && r.body.includes('Logout'),
     });
-
 
     sleep(1);
 }

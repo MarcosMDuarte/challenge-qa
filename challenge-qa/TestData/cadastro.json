@@ -21,7 +21,7 @@
     "cep_curto": "12345",
     "cep_longo": "1234567890",
     "cep_letras": "12AB5678",
-    "cep_caracteres": "1234-678",
+    "cep_caracteres": "91*3&678",
     "cep_vazio": "",
     "cidade_vazio": "",
     "estado_vazio": "",

@@ -5,8 +5,9 @@ import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporte
 const BASE_URL = 'https://quickpizza.grafana.com';
 
 export function handleSummary(data) {
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     return {
-        "results/flip_coin_test_result.html": htmlReport(data),
+        [`results/flip_coin_test_result${timestamp}.html`]: htmlReport(data),
     };
 }
 

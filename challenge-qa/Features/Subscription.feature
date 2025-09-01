@@ -70,7 +70,7 @@ Scenario Outline: Cadastro com <campo> inválido (<tipo>)
   And seleciono o curso "Mestrado em Engenharia de Software"
   And clico em "Avançar" no curso
   And preencho o formulário de cadastro com <campo> inválido do tipo <tipo>
-  And clico em "Avançar" no cadastro
+  #And clico em "Avançar" no cadastro
   Then devo visualizar a mensagem de erro de <campo> do tipo <tipo> 
 
 Examples:

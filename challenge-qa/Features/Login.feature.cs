@@ -119,34 +119,35 @@ namespace ChallengeQa.Features
             return new global::Io.Cucumber.Messages.Types.Source("Features/Login.feature", "Feature: Login do candidato\r\n  Como candidato\r\n  Quero acessar a área do candidat" +
                     "o\r\n  Para visualizar minhas informações após o cadastro\r\n\r\nBackground:\r\n  Given " +
                     "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softw" +
-                    "are\" do nível \"Pós-graduação\" recebendo credenciais válidas\r\n\r\n    @Login\r\n    S" +
-                    "cenario: Login com credenciais geradas no cadastro\r\n        When acesso a área d" +
-                    "o candidato\r\n        And preencho o usuário e senha válidos\r\n        And clico e" +
-                    "m \"Login\"\r\n        Then devo visualizar a página inicial da área do candidato\r\n\r" +
-                    "\n    @LoginInvalido\r\n    Scenario Outline: Tentativa de login inválido\r\n        " +
-                    "When acesso a área do candidato\r\n        And preencho usuário \"<usuario>\" e senh" +
-                    "a \"<senha>\"\r\n        And clico em \"Login\"\r\n        Then devo visualizar a mensag" +
-                    "em de erro <campo> \"<mensagem>\"\r\n\r\n    Examples:\r\n        | usuario         | se" +
-                    "nha             | campo    | mensagem          |\r\n        | usuarioInvalido | su" +
-                    "bscription      | usuário  | Usuário inválido  |\r\n        | candidato       | Se" +
-                    "nha_inválida    | senha    | Senha inválida    |\r\n        | usuarioInvalido | Se" +
-                    "nha_inválida    | usuário  | Usuário inválido  |\r\n        | usuarioInvalido | Se" +
-                    "nha_inválida    | senha    | Senha inválida    |\r\n\r\n\r\n    @RecuperarUsuario\r\n   " +
-                    " Scenario: Fluxo de recuperação de usuário\r\n        When acesso a área do candid" +
-                    "ato\r\n        And preencho o usuário\r\n        And clico em \"Recuperar usuário\"\r\n " +
-                    "       Then devo visualizar a tela de recuperação de usuário\r\n\r\n    @RecuperarUs" +
-                    "uario\r\n    Scenario: Recuperação de usuário sem informar credenciais\r\n        Wh" +
-                    "en acesso a área do candidato\r\n        And clico em \"Recuperar usuário\"\r\n       " +
-                    " Then devo visualizar uma mensagem de erro solicitando o preenchimento do usuári" +
-                    "o\r\n\r\n\r\n    @RedefinirSenha\r\n    Scenario: Fluxo de redefinição de senha\r\n      W" +
-                    "hen acesso a área do candidato\r\n      And preencho o usuário\r\n      And clico em" +
-                    " \"Redefinir senha\"\r\n      Then devo visualizar a tela de redefinição de senha\r\n\r" +
-                    "\n    @RedefinirSenha\r\n    Scenario: Redefinição de senha sem informar credenciai" +
-                    "s\r\n      When acesso a área do candidato\r\n      And clico em \"Redefinir senha\"\r\n" +
-                    "      Then devo visualizar uma mensagem de erro solicitando a identificação do u" +
-                    "suário\r\n\r\n\r\n\r\n      @Seguranca\r\n      Scenario: Tentativa de acesso direto sem l" +
-                    "ogin\r\n        Given que acesso diretamente a URL da área do candidato sem estar " +
-                    "autenticado\r\n        Then devo ser redirecionado para a tela de login\r\n\r\n", global::Io.Cucumber.Messages.Types.SourceMediaType.TEXT_X_CUCUMBER_GHERKIN_PLAIN);
+                    "are\" do nível \"Pós-graduação\" recebendo credenciais válidas\r\n\r\n    @Login @GT-00" +
+                    "7\r\n    Scenario: Login com credenciais geradas no cadastro\r\n        When acesso " +
+                    "a área do candidato\r\n        And preencho o usuário e senha válidos\r\n        And" +
+                    " clico em \"Login\"\r\n        Then devo visualizar a página inicial da área do cand" +
+                    "idato\r\n\r\n    @LoginInvalido @GT-008\r\n    Scenario Outline: Tentativa de login in" +
+                    "válido\r\n        When acesso a área do candidato\r\n        And preencho usuário \"<" +
+                    "usuario>\" e senha \"<senha>\"\r\n        And clico em \"Login\"\r\n        Then devo vis" +
+                    "ualizar a mensagem de erro <campo> \"<mensagem>\"\r\n\r\n    Examples:\r\n        | usua" +
+                    "rio         | senha             | campo    | mensagem          |\r\n        | usua" +
+                    "rioInvalido | subscription      | usuário  | Usuário inválido  |\r\n        | cand" +
+                    "idato       | Senha_inválida    | senha    | Senha inválida    |\r\n        | usua" +
+                    "rioInvalido | Senha_inválida    | usuário  | Usuário inválido  |\r\n        | usua" +
+                    "rioInvalido | Senha_inválida    | senha    | Senha inválida    |\r\n\r\n\r\n    @Recup" +
+                    "erarUsuario @GT-009\r\n    Scenario: Fluxo de recuperação de usuário\r\n        When" +
+                    " acesso a área do candidato\r\n        And preencho o usuário\r\n        And clico e" +
+                    "m \"Recuperar usuário\"\r\n        Then devo visualizar a tela de recuperação de usu" +
+                    "ário\r\n\r\n    @RecuperarUsuario @GT-010\r\n    Scenario: Recuperação de usuário sem " +
+                    "informar credenciais\r\n        When acesso a área do candidato\r\n        And clico" +
+                    " em \"Recuperar usuário\"\r\n        Then devo visualizar uma mensagem de erro solic" +
+                    "itando o preenchimento do usuário\r\n\r\n\r\n    @RedefinirSenha @GT-011\r\n    Scenario" +
+                    ": Fluxo de redefinição de senha\r\n      When acesso a área do candidato\r\n      An" +
+                    "d preencho o usuário\r\n      And clico em \"Redefinir senha\"\r\n      Then devo visu" +
+                    "alizar a tela de redefinição de senha\r\n\r\n    @RedefinirSenha @GT-012\r\n    Scenar" +
+                    "io: Redefinição de senha sem informar credenciais\r\n      When acesso a área do c" +
+                    "andidato\r\n      And clico em \"Redefinir senha\"\r\n      Then devo visualizar uma m" +
+                    "ensagem de erro solicitando a identificação do usuário\r\n\r\n\r\n\r\n      @Seguranca @" +
+                    "GT-013\r\n      Scenario: Tentativa de acesso direto sem login\r\n        Given que " +
+                    "acesso diretamente a URL da área do candidato sem estar autenticado\r\n        The" +
+                    "n devo ser redirecionado para a tela de login\r\n\r\n", global::Io.Cucumber.Messages.Types.SourceMediaType.TEXT_X_CUCUMBER_GHERKIN_PLAIN);
         }
         
         private static global::Io.Cucumber.Messages.Types.GherkinDocument GherkinDocumentFunc()
@@ -155,227 +156,244 @@ namespace ChallengeQa.Features
                         "nformações após o cadastro", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.FeatureChild>(new global::Io.Cucumber.Messages.Types.FeatureChild[] {
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, new global::Io.Cucumber.Messages.Types.Background(new global::Io.Cucumber.Messages.Types.Location(6, new System.Nullable<long>(1)), "Background", "", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
                                                     new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(7, new System.Nullable<long>(3)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
-                                                            "re\" do nível \"Pós-graduação\" recebendo credenciais válidas", null, null, "e185864c49df815b9ce37164cafb0ecf")}), "44050a2c0d11405ebe94e9545f128776"), null),
+                                                            "re\" do nível \"Pós-graduação\" recebendo credenciais válidas", null, null, "c340baf8e1f77a5aa3ed5840ffc49227")}), "a8a8f49005a87c5c80aee7b8a68cfb86"), null),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(10, new System.Nullable<long>(5)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(5)), "@Login", "c854da11e419dc5c9a5a6c54804f6564")}), "Scenario", "Login com credenciais geradas no cadastro", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(11, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "373cdd0d8f092051a188c1ef628cafff"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário e senha válidos", null, null, "3723bea5d2f4c858aa5d5106936a9749"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Login\"", null, null, "0e4e55fd3ef98f58b76e46a65c63ec79"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(14, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a página inicial da área do candidato", null, null, "b9547d207ad2e75caa4024cc08b2f074")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "d5dd9bac82aa665396605c26ed2c82cb")),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(5)), "@Login", "639fa90012aec85c90a8e1fa71bc6442"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(9, new System.Nullable<long>(12)), "@GT-007", "ff790e1eff14025c8d0c96084c9f8a17")}), "Scenario", "Login com credenciais geradas no cadastro", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(11, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "345a31b4d1c4b5519f2f8a509a47f399"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(12, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário e senha válidos", null, null, "4564d4aa38b9395a8a2f4b15d05bbb4a"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(13, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Login\"", null, null, "f404d8a59d12c3558d8b9c0571a6d126"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(14, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a página inicial da área do candidato", null, null, "18f1c48092ae89548fe4491837bbdf0a")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "ebf19049fa9e3354bdb609e206330e21")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(17, new System.Nullable<long>(5)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(5)), "@LoginInvalido", "2a224e47b9b4fb5990f42c156289ad01")}), "Scenario Outline", "Tentativa de login inválido", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "2026254a52b9495286475479f2f2b6a2"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho usuário \"<usuario>\" e senha \"<senha>\"", null, null, "831f2a7c388fc25c9baa0440bc09510b"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(20, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Login\"", null, null, "eedd0de4a9a0ef5e8bc61cdfb319f5ff"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(21, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem de erro <campo> \"<mensagem>\"", null, null, "0566a1aa0f167659b0ac7cc2a0edbbbf")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(5)), "@LoginInvalido", "01b2719d6483745ea2a48fc961d8288a"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(16, new System.Nullable<long>(20)), "@GT-008", "5868d3951ce75a53982df5888f5dd0f5")}), "Scenario Outline", "Tentativa de login inválido", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(18, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "3842e038d6624b598e5a25e9129e734d"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(19, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho usuário \"<usuario>\" e senha \"<senha>\"", null, null, "3089f8b2a94ab85ab9503f78efce2b68"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(20, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Login\"", null, null, "5d73df605b943853990c7cad04f49c56"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(21, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a mensagem de erro <campo> \"<mensagem>\"", null, null, "3be4b488e5bfe9519720dea4d7a498b7")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[] {
                                                     new global::Io.Cucumber.Messages.Types.Examples(new global::Io.Cucumber.Messages.Types.Location(23, new System.Nullable<long>(5)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[0]), "Examples", "", "", new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(24, new System.Nullable<long>(9)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(24, new System.Nullable<long>(11)), "usuario"),
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(24, new System.Nullable<long>(29)), "senha"),
                                                                         new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(24, new System.Nullable<long>(49)), "campo"),
-                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(24, new System.Nullable<long>(60)), "mensagem")}), "ad1046537c838950ab9cfa34fa153546"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
+                                                                        new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(24, new System.Nullable<long>(60)), "mensagem")}), "6e6ef3b944fff55ebf182fb92a978a8b"), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableRow>(new global::Io.Cucumber.Messages.Types.TableRow[] {
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(25, new System.Nullable<long>(9)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(25, new System.Nullable<long>(11)), "usuarioInvalido"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(25, new System.Nullable<long>(29)), "subscription"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(25, new System.Nullable<long>(49)), "usuário"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(25, new System.Nullable<long>(60)), "Usuário inválido")}), "a7343931e6d023568b4400f5320344a3"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(25, new System.Nullable<long>(60)), "Usuário inválido")}), "b40cb6db9b3dec52b2e81efe8810dfeb"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(9)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(11)), "candidato"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(29)), "Senha_inválida"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(49)), "senha"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(60)), "Senha inválida")}), "3e99520d2143a151846392c5ca860e98"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(26, new System.Nullable<long>(60)), "Senha inválida")}), "a1634fa1682ff75084dd9bbb66117437"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(9)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(11)), "usuarioInvalido"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(29)), "Senha_inválida"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(49)), "usuário"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(60)), "Usuário inválido")}), "f1af982c39d9bb5b8d110e4aca266e40"),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(27, new System.Nullable<long>(60)), "Usuário inválido")}), "1c9533a4f1355f52a9f85979d1684bd6"),
                                                                     new global::Io.Cucumber.Messages.Types.TableRow(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(9)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.TableCell>(new global::Io.Cucumber.Messages.Types.TableCell[] {
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(11)), "usuarioInvalido"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(29)), "Senha_inválida"),
                                                                                     new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(49)), "senha"),
-                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(60)), "Senha inválida")}), "0aef93b2b2461c5b82f4023ef86cb7fe")}), "f5d74cd18ea6f35eb2526ebb4f99e00d")}), "cd75487bfaa0205197684c70ea773020")),
+                                                                                    new global::Io.Cucumber.Messages.Types.TableCell(new global::Io.Cucumber.Messages.Types.Location(28, new System.Nullable<long>(60)), "Senha inválida")}), "2af5827488fa685b955db74f98217f2c")}), "6ff15d9b7d73b95a9217e0664a7eb097")}), "5bc6de8a83e7435db208b269a352c5d8")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(32, new System.Nullable<long>(5)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(31, new System.Nullable<long>(5)), "@RecuperarUsuario", "d1534d7d29f53f519f14a7280cc00486")}), "Scenario", "Fluxo de recuperação de usuário", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(33, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "4bd9c92a4c414c52a64b9314cbf7a295"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(34, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário", null, null, "c7271cd5026d7454a45b430c05fefd48"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(35, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Recuperar usuário\"", null, null, "a45455f171352552b07f55a2eefdbb3f"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(36, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a tela de recuperação de usuário", null, null, "1d2e835b162af15890a3542afb335efc")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "46884ff5144ff557a41f55788fa8f1e2")),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(31, new System.Nullable<long>(5)), "@RecuperarUsuario", "ce5be689efc2b656bc597cd51b0a0cf5"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(31, new System.Nullable<long>(23)), "@GT-009", "1b4647541f9b4356bf66fd7c45e0161f")}), "Scenario", "Fluxo de recuperação de usuário", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(33, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "2b89c08b0848715a9a4510efc4c07404"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(34, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário", null, null, "201d3ca26985d0569514d1657b4ebea2"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(35, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Recuperar usuário\"", null, null, "1e8bc446ae2fdc52b4f4d2a34b368ccb"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(36, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a tela de recuperação de usuário", null, null, "d2dfdb7a51163557ae65d303d23b4e2f")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "2af24b9b8ff81553ba3c146ce0044132")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(39, new System.Nullable<long>(5)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(38, new System.Nullable<long>(5)), "@RecuperarUsuario", "d58cf4e2196ee253a711e874b12fafab")}), "Scenario", "Recuperação de usuário sem informar credenciais", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(40, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "94adbea8a447f65c882802ccab5aafeb"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(41, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Recuperar usuário\"", null, null, "bbe696408ba5375ba298f8416e77e6ef"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(42, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar uma mensagem de erro solicitando o preenchimento do usuário", null, null, "4f7d4fa0a7bcf555afa725f96910f506")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "2c2fa2fa5b31a85aa6eba0a7000c9da5")),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(38, new System.Nullable<long>(5)), "@RecuperarUsuario", "33220f481d643a58b33cc1da89f9383a"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(38, new System.Nullable<long>(23)), "@GT-010", "3be99223837e29509b68643ddc8658dc")}), "Scenario", "Recuperação de usuário sem informar credenciais", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(40, new System.Nullable<long>(9)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "bcfb815d1afd3a578baf1464e20ca96a"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(41, new System.Nullable<long>(9)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Recuperar usuário\"", null, null, "d74772265386a55baf6ebc58ec25465f"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(42, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar uma mensagem de erro solicitando o preenchimento do usuário", null, null, "a428f54b56ead25082e74c13129c02b1")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "b38f96ea5a3f185bad86709c701826f2")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(46, new System.Nullable<long>(5)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(45, new System.Nullable<long>(5)), "@RedefinirSenha", "926c0dc35ac09c57873a4b43748e497e")}), "Scenario", "Fluxo de redefinição de senha", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(47, new System.Nullable<long>(7)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "29b0b2ce18faa0538a2120ce9123fcbd"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(48, new System.Nullable<long>(7)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário", null, null, "ba56ab3a2faaf95ba73cb6ade75f9af2"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(49, new System.Nullable<long>(7)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Redefinir senha\"", null, null, "c5f68266e7f27550b4aa15defd653bc7"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(50, new System.Nullable<long>(7)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a tela de redefinição de senha", null, null, "8acb00ab05d32b558a35da299e083304")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "e960563c6422f05981cabee3da369aef")),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(45, new System.Nullable<long>(5)), "@RedefinirSenha", "adeb7ea8f1f37b50850a8d2410da09d0"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(45, new System.Nullable<long>(21)), "@GT-011", "639c246b9196b259a510009c2802cff6")}), "Scenario", "Fluxo de redefinição de senha", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(47, new System.Nullable<long>(7)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "0d21ecb620198556b935a6ad7b7a92fc"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(48, new System.Nullable<long>(7)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "preencho o usuário", null, null, "0edb01d877e0da5b8c6d4c8f6578b353"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(49, new System.Nullable<long>(7)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Redefinir senha\"", null, null, "f2edfd821ea21d5a8297f2e65c18d940"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(50, new System.Nullable<long>(7)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar a tela de redefinição de senha", null, null, "e1224f4b9e4e165db4d3995f61916d9c")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "e5663f6ed987b350b27dbe36836a5fa0")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(53, new System.Nullable<long>(5)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(52, new System.Nullable<long>(5)), "@RedefinirSenha", "72e000164228f255b05edd975ff0b831")}), "Scenario", "Redefinição de senha sem informar credenciais", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(54, new System.Nullable<long>(7)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "320d558d69ae2a5894f3e27c0efb1f63"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(55, new System.Nullable<long>(7)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Redefinir senha\"", null, null, "26793748b90426598cc8d344d377920d"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(56, new System.Nullable<long>(7)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar uma mensagem de erro solicitando a identificação do usuário", null, null, "dfa5d86ffcac8d5a89d0744b5e5951fb")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "0ad1e2e3a25d2d5c881a1623e95e3053")),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(52, new System.Nullable<long>(5)), "@RedefinirSenha", "e2ff95230370135ab1bb26bc18160ce1"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(52, new System.Nullable<long>(21)), "@GT-012", "d46ccc6f602d345ca7b6f5acf636cdc4")}), "Scenario", "Redefinição de senha sem informar credenciais", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(54, new System.Nullable<long>(7)), "When ", global::Io.Cucumber.Messages.Types.StepKeywordType.ACTION, "acesso a área do candidato", null, null, "2c1f90544e20455f8de5b3a0bae301c1"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(55, new System.Nullable<long>(7)), "And ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONJUNCTION, "clico em \"Redefinir senha\"", null, null, "cebcd2ba7071ce5f9a24f461da2b2934"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(56, new System.Nullable<long>(7)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo visualizar uma mensagem de erro solicitando a identificação do usuário", null, null, "8aa510b93eba845c8761dcec4b6e8921")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "3c3a4e05d72f19569cac28f9e14e5ce2")),
                                 new global::Io.Cucumber.Messages.Types.FeatureChild(null, null, new global::Io.Cucumber.Messages.Types.Scenario(new global::Io.Cucumber.Messages.Types.Location(61, new System.Nullable<long>(7)), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Tag>(new global::Io.Cucumber.Messages.Types.Tag[] {
-                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(60, new System.Nullable<long>(7)), "@Seguranca", "ad7307d4182970578f18635c4261b805")}), "Scenario", "Tentativa de acesso direto sem login", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(62, new System.Nullable<long>(9)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso diretamente a URL da área do candidato sem estar autenticado", null, null, "e519c7af5cfa7c5b8555861312b2cf6b"),
-                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(63, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo ser redirecionado para a tela de login", null, null, "87d6d766ab896b55aafe9c9a9514b91c")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "f4ed09ee815be85dbd1284b5b590344d"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[0]));
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(60, new System.Nullable<long>(7)), "@Seguranca", "ac838f64a523005ab199e53844216366"),
+                                                    new global::Io.Cucumber.Messages.Types.Tag(new global::Io.Cucumber.Messages.Types.Location(60, new System.Nullable<long>(18)), "@GT-013", "848150d9e628985c8f3776932c0f3d1f")}), "Scenario", "Tentativa de acesso direto sem login", "", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Step>(new global::Io.Cucumber.Messages.Types.Step[] {
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(62, new System.Nullable<long>(9)), "Given ", global::Io.Cucumber.Messages.Types.StepKeywordType.CONTEXT, "que acesso diretamente a URL da área do candidato sem estar autenticado", null, null, "ef20cb1bc475fa569cee06524bedc3a3"),
+                                                    new global::Io.Cucumber.Messages.Types.Step(new global::Io.Cucumber.Messages.Types.Location(63, new System.Nullable<long>(9)), "Then ", global::Io.Cucumber.Messages.Types.StepKeywordType.OUTCOME, "devo ser redirecionado para a tela de login", null, null, "ec1dd1bcdd7f5a589c233cfdce4f505a")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Examples>(new global::Io.Cucumber.Messages.Types.Examples[0]), "5f90586f548ef756893d1d496a78fd87"))})), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Comment>(new global::Io.Cucumber.Messages.Types.Comment[0]));
         }
         
         private static global::System.Collections.Generic.IEnumerable<Io.Cucumber.Messages.Types.Pickle> PicklesFunc()
         {
             return new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.Pickle>(new global::Io.Cucumber.Messages.Types.Pickle[] {
-                        new global::Io.Cucumber.Messages.Types.Pickle("2f15d1599195a750928b9d15165cae86", "Features/Login.feature", "Login com credenciais geradas no cadastro", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                        new global::Io.Cucumber.Messages.Types.Pickle("5d5858a9c7bef651887acb9b8a955ea7", "Features/Login.feature", "Login com credenciais geradas no cadastro", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "2d0568a3e3447c5fb3b4cdf4709438cc", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "22e524756a69e457884507bb2b0f9197", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "373cdd0d8f092051a188c1ef628cafff"}), "801a96510609a75f8e240ed0b618b5c1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "345a31b4d1c4b5519f2f8a509a47f399"}), "038230aef5ffe35ca78e6022dd1901b5", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "3723bea5d2f4c858aa5d5106936a9749"}), "8bf554119510405192633ac3d21213c0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
+                                                        "4564d4aa38b9395a8a2f4b15d05bbb4a"}), "26ad7783b37ea054a535eebf1898cc87", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário e senha válidos"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0e4e55fd3ef98f58b76e46a65c63ec79"}), "d361a15263507f58bbf081b9e2b17254", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "f404d8a59d12c3558d8b9c0571a6d126"}), "55c85f4c6a574554869589afc62ac2c0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "b9547d207ad2e75caa4024cc08b2f074"}), "c66fa89f1a32385e8cb5500a70f8062c", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "c854da11e419dc5c9a5a6c54804f6564")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "d5dd9bac82aa665396605c26ed2c82cb"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("8e131815398a925f9986f02b72e4f1c5", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "18f1c48092ae89548fe4491837bbdf0a"}), "204a5fe16bccd154b4ef73a8b4cfc4b0", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a página inicial da área do candidato")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Login", "639fa90012aec85c90a8e1fa71bc6442"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-007", "ff790e1eff14025c8d0c96084c9f8a17")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "ebf19049fa9e3354bdb609e206330e21"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("b599d1eba665e95085f436cd54393281", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "4407b85d1d294d58af456aae9dca8e8c", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "2ccbd38a514c76528c299d27e8ca4d03", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2026254a52b9495286475479f2f2b6a2",
-                                                        "a7343931e6d023568b4400f5320344a3"}), "197430e745373d5ba6479eeb36283b78", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "3842e038d6624b598e5a25e9129e734d",
+                                                        "b40cb6db9b3dec52b2e81efe8810dfeb"}), "e3d3176435316c5d9a8a5109235f932e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "831f2a7c388fc25c9baa0440bc09510b",
-                                                        "a7343931e6d023568b4400f5320344a3"}), "b42d99b08f6e42539916a4a8442a84ee", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"usuarioInvalido\" e senha \"subscription\""),
+                                                        "3089f8b2a94ab85ab9503f78efce2b68",
+                                                        "b40cb6db9b3dec52b2e81efe8810dfeb"}), "32b00afde839a854bf13b0b6274fc2db", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"usuarioInvalido\" e senha \"subscription\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "eedd0de4a9a0ef5e8bc61cdfb319f5ff",
-                                                        "a7343931e6d023568b4400f5320344a3"}), "c20b75674ac99a5ba1f3cc969dff8f31", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "5d73df605b943853990c7cad04f49c56",
+                                                        "b40cb6db9b3dec52b2e81efe8810dfeb"}), "2abd5eab8e721353b3a56aeb6eba9eba", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0566a1aa0f167659b0ac7cc2a0edbbbf",
-                                                        "a7343931e6d023568b4400f5320344a3"}), "f620039949e1fd5998816a4613a375ae", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro usuário \"Usuário inválido\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "2a224e47b9b4fb5990f42c156289ad01")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "cd75487bfaa0205197684c70ea773020",
-                                        "a7343931e6d023568b4400f5320344a3"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("14722a6958492a538e46fd7ea811273a", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "3be4b488e5bfe9519720dea4d7a498b7",
+                                                        "b40cb6db9b3dec52b2e81efe8810dfeb"}), "16418835d8e2685a8ac12e64dea6ce91", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro usuário \"Usuário inválido\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "01b2719d6483745ea2a48fc961d8288a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-008", "5868d3951ce75a53982df5888f5dd0f5")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "5bc6de8a83e7435db208b269a352c5d8",
+                                        "b40cb6db9b3dec52b2e81efe8810dfeb"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("357577aef80d885db3d97d8e3e04b9aa", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "caaf0ecbc76a1f5d84351b92732199fc", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "92e99687ac204a539186b4d27ddb345a", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2026254a52b9495286475479f2f2b6a2",
-                                                        "3e99520d2143a151846392c5ca860e98"}), "883b401586efe45b9220308047b77dc0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "3842e038d6624b598e5a25e9129e734d",
+                                                        "a1634fa1682ff75084dd9bbb66117437"}), "fdf1f82ad293c85f82eec5aed1aedbad", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "831f2a7c388fc25c9baa0440bc09510b",
-                                                        "3e99520d2143a151846392c5ca860e98"}), "e2555682b741c05eb6ef4d186bbb4053", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"candidato\" e senha \"Senha_inválida\""),
+                                                        "3089f8b2a94ab85ab9503f78efce2b68",
+                                                        "a1634fa1682ff75084dd9bbb66117437"}), "dbe97f2fab27565199c126e60dadd8dd", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"candidato\" e senha \"Senha_inválida\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "eedd0de4a9a0ef5e8bc61cdfb319f5ff",
-                                                        "3e99520d2143a151846392c5ca860e98"}), "2314cb48d889e25ca9f6a8fe3f8e3170", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "5d73df605b943853990c7cad04f49c56",
+                                                        "a1634fa1682ff75084dd9bbb66117437"}), "91f7c5d3aefe2e50826ebfd879a6792c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0566a1aa0f167659b0ac7cc2a0edbbbf",
-                                                        "3e99520d2143a151846392c5ca860e98"}), "256253ab85c00e5794a3a98490a6672a", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro senha \"Senha inválida\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "2a224e47b9b4fb5990f42c156289ad01")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "cd75487bfaa0205197684c70ea773020",
-                                        "3e99520d2143a151846392c5ca860e98"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("1eef4ccc93092e569b17f1cefcad004b", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "3be4b488e5bfe9519720dea4d7a498b7",
+                                                        "a1634fa1682ff75084dd9bbb66117437"}), "8c474c7abe74995489a4c1879a7fd9a1", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro senha \"Senha inválida\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "01b2719d6483745ea2a48fc961d8288a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-008", "5868d3951ce75a53982df5888f5dd0f5")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "5bc6de8a83e7435db208b269a352c5d8",
+                                        "a1634fa1682ff75084dd9bbb66117437"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("5c7568a327ef0059baa57aa1f68c287b", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "26be7e6f0b43e159bc4bff03512149f6", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "0e16952af6819758b53c1bfeebda9428", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2026254a52b9495286475479f2f2b6a2",
-                                                        "f1af982c39d9bb5b8d110e4aca266e40"}), "44d3f2690fa5cb599374bdf172eb8962", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "3842e038d6624b598e5a25e9129e734d",
+                                                        "1c9533a4f1355f52a9f85979d1684bd6"}), "f231165361df715f854825a9a707f704", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "831f2a7c388fc25c9baa0440bc09510b",
-                                                        "f1af982c39d9bb5b8d110e4aca266e40"}), "6eaa454b0e641c59934de83b02d79055", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"usuarioInvalido\" e senha \"Senha_inválida\""),
+                                                        "3089f8b2a94ab85ab9503f78efce2b68",
+                                                        "1c9533a4f1355f52a9f85979d1684bd6"}), "2b2bb3bf5138f55cbccc7acc3f4be74f", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"usuarioInvalido\" e senha \"Senha_inválida\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "eedd0de4a9a0ef5e8bc61cdfb319f5ff",
-                                                        "f1af982c39d9bb5b8d110e4aca266e40"}), "fd191450c687a65bb47f47c61fdeaf3e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "5d73df605b943853990c7cad04f49c56",
+                                                        "1c9533a4f1355f52a9f85979d1684bd6"}), "c9cd73824529c75f805ebfe6343b4fd0", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0566a1aa0f167659b0ac7cc2a0edbbbf",
-                                                        "f1af982c39d9bb5b8d110e4aca266e40"}), "73a9b325789b575e9e43e65b866f5460", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro usuário \"Usuário inválido\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "2a224e47b9b4fb5990f42c156289ad01")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "cd75487bfaa0205197684c70ea773020",
-                                        "f1af982c39d9bb5b8d110e4aca266e40"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("3d5ffc488fa9c154b5de5c3659a689c4", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "3be4b488e5bfe9519720dea4d7a498b7",
+                                                        "1c9533a4f1355f52a9f85979d1684bd6"}), "3b01d0c9af51715682ae43a41e1a9704", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro usuário \"Usuário inválido\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "01b2719d6483745ea2a48fc961d8288a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-008", "5868d3951ce75a53982df5888f5dd0f5")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "5bc6de8a83e7435db208b269a352c5d8",
+                                        "1c9533a4f1355f52a9f85979d1684bd6"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("15a7160195117f5c9e3501d6fbfc8707", "Features/Login.feature", "Tentativa de login inválido", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "f82f1a62894a52548ff888c2c8cbf9b1", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "0178d2493648855abb5e505a64df20b5", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "2026254a52b9495286475479f2f2b6a2",
-                                                        "0aef93b2b2461c5b82f4023ef86cb7fe"}), "86389c84e338ac5bbe5af2bce636061d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "3842e038d6624b598e5a25e9129e734d",
+                                                        "2af5827488fa685b955db74f98217f2c"}), "055477c344c0e25a9ad15df75d967a2a", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "831f2a7c388fc25c9baa0440bc09510b",
-                                                        "0aef93b2b2461c5b82f4023ef86cb7fe"}), "f9d26d999228225dbfbb626e850294fc", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"usuarioInvalido\" e senha \"Senha_inválida\""),
+                                                        "3089f8b2a94ab85ab9503f78efce2b68",
+                                                        "2af5827488fa685b955db74f98217f2c"}), "49c2dc61a531fa52889cd1273a25daac", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho usuário \"usuarioInvalido\" e senha \"Senha_inválida\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "eedd0de4a9a0ef5e8bc61cdfb319f5ff",
-                                                        "0aef93b2b2461c5b82f4023ef86cb7fe"}), "082e5e80bda3f359b4312313489f4171", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
+                                                        "5d73df605b943853990c7cad04f49c56",
+                                                        "2af5827488fa685b955db74f98217f2c"}), "5d0f6f488e361d5cbfe2e735eab55ee7", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Login\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "0566a1aa0f167659b0ac7cc2a0edbbbf",
-                                                        "0aef93b2b2461c5b82f4023ef86cb7fe"}), "78d42f587714215286f15e8856aeed9b", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro senha \"Senha inválida\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "2a224e47b9b4fb5990f42c156289ad01")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "cd75487bfaa0205197684c70ea773020",
-                                        "0aef93b2b2461c5b82f4023ef86cb7fe"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("e1c9ffce9fbd1754aa833e798706ada6", "Features/Login.feature", "Fluxo de recuperação de usuário", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "3be4b488e5bfe9519720dea4d7a498b7",
+                                                        "2af5827488fa685b955db74f98217f2c"}), "ce018e8dc685f85289a185198fe9e9d4", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a mensagem de erro senha \"Senha inválida\"")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@LoginInvalido", "01b2719d6483745ea2a48fc961d8288a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-008", "5868d3951ce75a53982df5888f5dd0f5")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "5bc6de8a83e7435db208b269a352c5d8",
+                                        "2af5827488fa685b955db74f98217f2c"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("469f569ead9d65539998ff9dc4f75914", "Features/Login.feature", "Fluxo de recuperação de usuário", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "75b2f4ba0827a858a183809d813ceac3", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "548475e1f986ef51a8e4465da3b87e10", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4bd9c92a4c414c52a64b9314cbf7a295"}), "4705a01bfdbbc856b2a0dadaa980194d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "2b89c08b0848715a9a4510efc4c07404"}), "9738786bcc2a7f5a9fffc8a173b88eef", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "c7271cd5026d7454a45b430c05fefd48"}), "14fa5b2745c9ad51a6e09e727180e98c", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário"),
+                                                        "201d3ca26985d0569514d1657b4ebea2"}), "4c984eaead23955584b8a34d0190f98e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "a45455f171352552b07f55a2eefdbb3f"}), "07d65f746f1db8558ec36bf23509c8f8", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Recuperar usuário\""),
+                                                        "1e8bc446ae2fdc52b4f4d2a34b368ccb"}), "f8c86c8bd0215f5a933f11fe5059f177", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Recuperar usuário\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "1d2e835b162af15890a3542afb335efc"}), "a0c6fa35529666548a3daaf821cbe234", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a tela de recuperação de usuário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RecuperarUsuario", "d1534d7d29f53f519f14a7280cc00486")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "46884ff5144ff557a41f55788fa8f1e2"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("8532fc1cc24458538bbd44e26540a12c", "Features/Login.feature", "Recuperação de usuário sem informar credenciais", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "d2dfdb7a51163557ae65d303d23b4e2f"}), "259c5cfc4fc5805c99ddb9e8fdf72cba", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a tela de recuperação de usuário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RecuperarUsuario", "ce5be689efc2b656bc597cd51b0a0cf5"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-009", "1b4647541f9b4356bf66fd7c45e0161f")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "2af24b9b8ff81553ba3c146ce0044132"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("25c9025ab7adcb52951cb53772c12016", "Features/Login.feature", "Recuperação de usuário sem informar credenciais", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "53fd6c0bf68ccd59a3eaa873250ff481", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "e93edb846eb75e5c99a5c49d90c98c4c", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "94adbea8a447f65c882802ccab5aafeb"}), "cc56cfdcc7df2759b823fcf100c80ff1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "bcfb815d1afd3a578baf1464e20ca96a"}), "9ea035ee8046c056ad571d5204945724", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "bbe696408ba5375ba298f8416e77e6ef"}), "e94971654f45b158a2c3253a40d22a3e", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Recuperar usuário\""),
+                                                        "d74772265386a55baf6ebc58ec25465f"}), "45ace6faf1196a5a8ffc94527c0291c1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Recuperar usuário\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "4f7d4fa0a7bcf555afa725f96910f506"}), "a17db5aaad88a951a0691061e8bb64cc", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar uma mensagem de erro solicitando o preenchimento do usuário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RecuperarUsuario", "d58cf4e2196ee253a711e874b12fafab")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "2c2fa2fa5b31a85aa6eba0a7000c9da5"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("76fd82c415ea8c52bcff08a1ef0b2fc8", "Features/Login.feature", "Fluxo de redefinição de senha", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "a428f54b56ead25082e74c13129c02b1"}), "16c9e3ae8e56265fb9f6c458c05a0749", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar uma mensagem de erro solicitando o preenchimento do usuário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RecuperarUsuario", "33220f481d643a58b33cc1da89f9383a"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-010", "3be99223837e29509b68643ddc8658dc")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "b38f96ea5a3f185bad86709c701826f2"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("784dcdeced30675a9eb3186cd4207bf5", "Features/Login.feature", "Fluxo de redefinição de senha", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "de233155d5b81f52883ea834d88f02cb", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "ad9e527636c80c508096701fb9d3e06a", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "29b0b2ce18faa0538a2120ce9123fcbd"}), "191904a11032485c83ee2e3960ffdaca", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "0d21ecb620198556b935a6ad7b7a92fc"}), "bfcc1dff90a80359b6347c985a2343d9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "ba56ab3a2faaf95ba73cb6ade75f9af2"}), "c86db56ec522fd548c44733337235864", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário"),
+                                                        "0edb01d877e0da5b8c6d4c8f6578b353"}), "3d6ce23b952af85cacdcf070761231b1", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "preencho o usuário"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "c5f68266e7f27550b4aa15defd653bc7"}), "a11d3b629d3ffa50a7c2c6d5deba2799", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Redefinir senha\""),
+                                                        "f2edfd821ea21d5a8297f2e65c18d940"}), "5e1ff9f31e38555eb09e5ace742f6720", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Redefinir senha\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "8acb00ab05d32b558a35da299e083304"}), "94ce5fd2e4d4f35e98cac8ceef51412e", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a tela de redefinição de senha")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RedefinirSenha", "926c0dc35ac09c57873a4b43748e497e")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "e960563c6422f05981cabee3da369aef"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("c25d8fd4ef3b2b568d96a404bd295759", "Features/Login.feature", "Redefinição de senha sem informar credenciais", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "e1224f4b9e4e165db4d3995f61916d9c"}), "ab8943cd787258529f8257cbebc44e7b", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar a tela de redefinição de senha")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RedefinirSenha", "adeb7ea8f1f37b50850a8d2410da09d0"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-011", "639c246b9196b259a510009c2802cff6")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "e5663f6ed987b350b27dbe36836a5fa0"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("f89bb4d064abe25482bedad4673f7be1", "Features/Login.feature", "Redefinição de senha sem informar credenciais", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "cedab6599e0a885eb1cf46f825f7e5bb", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "a7687cc1856fe55192cc0209b0fa1eff", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "320d558d69ae2a5894f3e27c0efb1f63"}), "6ae3a85bcad8d450ab56deb9be990dfa", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
+                                                        "2c1f90544e20455f8de5b3a0bae301c1"}), "f43d93792abd4357a336e6f56c5d352d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "acesso a área do candidato"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "26793748b90426598cc8d344d377920d"}), "dbd9372cc370aa50961944b92096da2d", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Redefinir senha\""),
+                                                        "cebcd2ba7071ce5f9a24f461da2b2934"}), "3940248c23e77a5f93cf6625c958e0f9", global::Io.Cucumber.Messages.Types.PickleStepType.ACTION, "clico em \"Redefinir senha\""),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "dfa5d86ffcac8d5a89d0744b5e5951fb"}), "5422e451ca13e353a19dc7126c5020b5", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar uma mensagem de erro solicitando a identificação do usuário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RedefinirSenha", "72e000164228f255b05edd975ff0b831")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "0ad1e2e3a25d2d5c881a1623e95e3053"})),
-                        new global::Io.Cucumber.Messages.Types.Pickle("d50d6902f94b1653801788d4ecffaf45", "Features/Login.feature", "Tentativa de acesso direto sem login", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
+                                                        "8aa510b93eba845c8761dcec4b6e8921"}), "303179b4526e79588ff18b61fc9a21ca", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo visualizar uma mensagem de erro solicitando a identificação do usuário")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@RedefinirSenha", "e2ff95230370135ab1bb26bc18160ce1"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-012", "d46ccc6f602d345ca7b6f5acf636cdc4")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "3c3a4e05d72f19569cac28f9e14e5ce2"})),
+                        new global::Io.Cucumber.Messages.Types.Pickle("e79c70bf22bde256a5af11d97e2096a9", "Features/Login.feature", "Tentativa de acesso direto sem login", "en-US", new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleStep>(new global::Io.Cucumber.Messages.Types.PickleStep[] {
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e185864c49df815b9ce37164cafb0ecf"}), "98008c86e235c658a49d6850ab8766df", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
+                                                        "c340baf8e1f77a5aa3ed5840ffc49227"}), "a438281041a59850beb5b3051a2e1f81", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que concluo o cadastro de um candidato no curso \"Mestrado em Engenharia de Softwa" +
                                                 "re\" do nível \"Pós-graduação\" recebendo credenciais válidas"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "e519c7af5cfa7c5b8555861312b2cf6b"}), "b8af8826917b8d5f910a8f4c971fe382", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso diretamente a URL da área do candidato sem estar autenticado"),
+                                                        "ef20cb1bc475fa569cee06524bedc3a3"}), "e4510a4756e1ce56a6f40d45380c7737", global::Io.Cucumber.Messages.Types.PickleStepType.CONTEXT, "que acesso diretamente a URL da área do candidato sem estar autenticado"),
                                         new global::Io.Cucumber.Messages.Types.PickleStep(null, new System.Collections.Generic.List<string>(new string[] {
-                                                        "87d6d766ab896b55aafe9c9a9514b91c"}), "69eac5af4f0f205e88dc45dd1258bcee", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo ser redirecionado para a tela de login")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
-                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Seguranca", "ad7307d4182970578f18635c4261b805")}), new System.Collections.Generic.List<string>(new string[] {
-                                        "f4ed09ee815be85dbd1284b5b590344d"}))});
+                                                        "ec1dd1bcdd7f5a589c233cfdce4f505a"}), "a5b6913354d47c57a0804111b2b9b6b7", global::Io.Cucumber.Messages.Types.PickleStepType.OUTCOME, "devo ser redirecionado para a tela de login")}), new System.Collections.Generic.List<global::Io.Cucumber.Messages.Types.PickleTag>(new global::Io.Cucumber.Messages.Types.PickleTag[] {
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@Seguranca", "ac838f64a523005ab199e53844216366"),
+                                        new global::Io.Cucumber.Messages.Types.PickleTag("@GT-013", "848150d9e628985c8f3776932c0f3d1f")}), new System.Collections.Generic.List<string>(new string[] {
+                                        "5f90586f548ef756893d1d496a78fd87"}))});
         }
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
@@ -386,10 +404,12 @@ namespace ChallengeQa.Features
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Login com credenciais geradas no cadastro")]
         [global::NUnit.Framework.CategoryAttribute("Login")]
+        [global::NUnit.Framework.CategoryAttribute("GT-007")]
         public async global::System.Threading.Tasks.Task LoginComCredenciaisGeradasNoCadastro()
         {
             string[] tagsOfScenario = new string[] {
-                    "Login"};
+                    "Login",
+                    "GT-007"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "0";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Login com credenciais geradas no cadastro", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
@@ -427,6 +447,7 @@ await this.FeatureBackgroundAsync();
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Tentativa de login inválido")]
         [global::NUnit.Framework.CategoryAttribute("LoginInvalido")]
+        [global::NUnit.Framework.CategoryAttribute("GT-008")]
         [global::NUnit.Framework.TestCaseAttribute("usuarioInvalido", "subscription", "usuário", "Usuário inválido", "1", null)]
         [global::NUnit.Framework.TestCaseAttribute("candidato", "Senha_inválida", "senha", "Senha inválida", "2", null)]
         [global::NUnit.Framework.TestCaseAttribute("usuarioInvalido", "Senha_inválida", "usuário", "Usuário inválido", "3", null)]
@@ -434,7 +455,8 @@ await this.FeatureBackgroundAsync();
         public async global::System.Threading.Tasks.Task TentativaDeLoginInvalido(string usuario, string senha, string campo, string mensagem, string @__pickleIndex, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "LoginInvalido"};
+                    "LoginInvalido",
+                    "GT-008"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -481,10 +503,12 @@ await this.FeatureBackgroundAsync();
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Fluxo de recuperação de usuário")]
         [global::NUnit.Framework.CategoryAttribute("RecuperarUsuario")]
+        [global::NUnit.Framework.CategoryAttribute("GT-009")]
         public async global::System.Threading.Tasks.Task FluxoDeRecuperacaoDeUsuario()
         {
             string[] tagsOfScenario = new string[] {
-                    "RecuperarUsuario"};
+                    "RecuperarUsuario",
+                    "GT-009"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "5";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Fluxo de recuperação de usuário", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
@@ -522,10 +546,12 @@ await this.FeatureBackgroundAsync();
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Recuperação de usuário sem informar credenciais")]
         [global::NUnit.Framework.CategoryAttribute("RecuperarUsuario")]
+        [global::NUnit.Framework.CategoryAttribute("GT-010")]
         public async global::System.Threading.Tasks.Task RecuperacaoDeUsuarioSemInformarCredenciais()
         {
             string[] tagsOfScenario = new string[] {
-                    "RecuperarUsuario"};
+                    "RecuperarUsuario",
+                    "GT-010"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "6";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Recuperação de usuário sem informar credenciais", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
@@ -560,10 +586,12 @@ await this.FeatureBackgroundAsync();
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Fluxo de redefinição de senha")]
         [global::NUnit.Framework.CategoryAttribute("RedefinirSenha")]
+        [global::NUnit.Framework.CategoryAttribute("GT-011")]
         public async global::System.Threading.Tasks.Task FluxoDeRedefinicaoDeSenha()
         {
             string[] tagsOfScenario = new string[] {
-                    "RedefinirSenha"};
+                    "RedefinirSenha",
+                    "GT-011"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "7";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Fluxo de redefinição de senha", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
@@ -601,10 +629,12 @@ await this.FeatureBackgroundAsync();
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Redefinição de senha sem informar credenciais")]
         [global::NUnit.Framework.CategoryAttribute("RedefinirSenha")]
+        [global::NUnit.Framework.CategoryAttribute("GT-012")]
         public async global::System.Threading.Tasks.Task RedefinicaoDeSenhaSemInformarCredenciais()
         {
             string[] tagsOfScenario = new string[] {
-                    "RedefinirSenha"};
+                    "RedefinirSenha",
+                    "GT-012"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "8";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Redefinição de senha sem informar credenciais", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
@@ -639,10 +669,12 @@ await this.FeatureBackgroundAsync();
         [global::NUnit.Framework.TestAttribute()]
         [global::NUnit.Framework.DescriptionAttribute("Tentativa de acesso direto sem login")]
         [global::NUnit.Framework.CategoryAttribute("Seguranca")]
+        [global::NUnit.Framework.CategoryAttribute("GT-013")]
         public async global::System.Threading.Tasks.Task TentativaDeAcessoDiretoSemLogin()
         {
             string[] tagsOfScenario = new string[] {
-                    "Seguranca"};
+                    "Seguranca",
+                    "GT-013"};
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "9";
             global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Tentativa de acesso direto sem login", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
