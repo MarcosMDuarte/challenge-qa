@@ -20,8 +20,5 @@ obj/
 *.html
 results/
 
-# Manter a pasta Evidence (não ignorar)
-!Evidence/
-
 # Configurações locais
 *.local.json
