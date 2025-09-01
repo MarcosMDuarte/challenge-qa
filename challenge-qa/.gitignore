@@ -17,9 +17,11 @@ obj/
 *.manifest
 
 # Relatórios / Evidências
-Evidence/
 *.html
 results/
+
+# Manter a pasta Evidence (não ignorar)
+!Evidence/
 
 # Configurações locais
 *.local.json
